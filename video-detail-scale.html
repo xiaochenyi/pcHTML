@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>视频详情</title>
+    <link rel="stylesheet" href="res/css/style.css" />
+    <link rel="stylesheet" href="res/css/video_details_scale.css" />
+    <script type="text/javascript" src="res/js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+
+<div class="wrap-main">
+<div class="main">
+    <div class="back">
+        <p>
+            <img src="res/img/icon_back.png" alt="">
+            返回
+        </p>
+    </div>
+    <div class="content clearfix">
+        <div class="pic">
+            <img src="res/img/more.png" alt=""/>
+            <img class="foot_flag" src="res/img/corner_pd.png" alt="">
+            <div class="bg">
+                <span>01:23:12</span>
+            </div>
+        </div>
+        <div class="introduction">
+            <div class="title clearfix">
+                <h3>九州天空城外</h3>
+                <p>
+                    <span>豆瓣评分：</span><span>7.7分</span>
+                </p>
+            </div>
+            <div class="info clearfix">
+                <div class="info1">
+                    <p>
+                        <span>地区：</span><i class="i1">内地内地内地内地内地内地内地内地内地内地内地内地内地内地内地</i>
+                    </p>
+                    <p>
+                        <span>类型：</span><i>军旅剧 / 谍战剧 / 偶像剧军旅剧 / 谍战剧 / 偶像剧军旅剧 / 谍战剧 / 偶像剧</i>
+                    </p>
+                </div>
+                <div class="info1">
+                    <p>
+                        <span>导演：</span><i class="i1">内地</i>
+                    </p>
+                    <p>
+                        <span>主演：</span><i>军旅剧 / 谍战剧 / 偶像剧军旅剧 / 谍战剧 / 偶像剧军旅剧 / 谍战剧 / 偶像剧军旅剧 / 谍战剧 / 偶像剧</i>
+                    </p>
+                </div>
+                <div class="info2">
+                    <p>
+                        <span>简介：</span><i>《九州天空城》是一部由企鹅影业和上影寰亚联合出品、由杨磊执导，樊斐斐、方芳担任制片人，张若昀、关晓彤、刘畅、鞠婧祎、陈若轩、赵健、张鲁一、刘敏、阿丽</i>
+                    </p>
+                </div>
+                <div class="btn clearfix">
+                    <p>播放</p>
+                    <ol>
+                        <li class="offline_cache">离线缓存</li>
+                        <li class="open_member">开通VIP</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <p class="recommend_title">推荐视频</p>
+        </div>
+        <div class="recommend clearfix">
+            <img src="res/img/arrow_left.png" alt="" class="left"/>
+            <div class="ul">
+                <ul>
+                    <li>
+                        <img class="pic" src="res/img/more.png" alt="">
+                        <div class="icon_box">
+                            <img class="foot_flag" src="res/img/corner_yg.png" alt=""/>
+                            <img class="icon" src="res/img/icon_play.png" alt="">
+                            <div class="bg_text">
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <p class="text">
+                                <span>x教授与万磁王的对抗</span>
+                                <span>00:12:17</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="pic" src="res/img/more.png" alt="">
+                        <div class="icon_box">
+                            <img class="foot_flag" src="res/img/corner_yg.png" alt=""/>
+                            <img class="icon" src="res/img/icon_play.png" alt="">
+                            <div class="bg_text">
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <p class="text">
+                                <span>x教授与万磁王的对抗</span>
+                                <span>00:12:17</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="pic" src="res/img/more.png" alt="">
+                        <div class="icon_box">
+                            <img class="foot_flag" src="res/img/corner_yg.png" alt=""/>
+                            <img class="icon" src="res/img/icon_play.png" alt="">
+                            <div class="bg_text">
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <p class="text">
+                                <span>x教授与万磁王的对抗</span>
+                                <span>00:12:17</span>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="mr">
+                        <img class="pic" src="res/img/more.png" alt="">
+                        <div class="icon_box">
+                            <img class="icon" src="res/img/icon_play.png" alt="">
+                            <p class="text">
+                                <span>x教授与万磁王的对抗</span>
+                                <span>00:12:17</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <img src="res/img/arrow_right.png" alt="" class="right"/>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<!--<script type="text/javascript" src="src/videoDetails.js"></script>-->
+<script>
+    function scale() {
+        console.log("自适应");
+        var curr_w = $(window).width();
+        var max_w = 1260;
+        var s_w = curr_w/max_w;
+
+        var curr_h = $(window).height();
+        var max_h = 732;
+        var s_h = curr_h/max_h;
+        $('.main').css('transform',"scale(" + s_w + ",1)");
+    }
+
+    window.onresize = function() {
+        var res;
+        if (res){clearTimeout(res)}
+        res = setTimeout(function(){
+            scale();
+        },20);
+    }
+</script>
+</html>

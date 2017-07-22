@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>重构首页</title>
+    <link type="text/css" rel="stylesheet" href="res/css/style.css">
+    <link type="text/css" rel="stylesheet" href="res/css/index-3d.css">
+    <link type="text/css" rel="stylesheet" href="res/css/home_3d.css">
+</head>
+<body ng-controller="personCtrl">
+    <!--内容区-->
+    <div class="main-demo">
+        <div class="part1 clearfix">
+            <div class="part1-1 fl">
+
+                <div class="wrap-box1">
+
+                    <li class="box-img">
+
+
+                        <div class="w">
+                            <div class="f" style="background-image:url({{ recmdList[0].posterfid }})">
+                                <!-- 视频 -->
+                                <div ng-if="recmdList[0].type == 1 || recmdList[0].type==4 || recmdList[0].type > 5">
+                                    <img src="res/img/icon_play.png" class="icon-center-play">
+                                </div>
+                            </div>
+                            <div class="b cont">
+                                <h3>{{ recmdList[0].name }}</h3>
+                                <p>{{ recmdList[0].description || '暂无' }} </p>
+                                <div class="goDetail" >查看详情</div>
+                                <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                                <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                            </div>
+                        </div>
+                    </li>
+
+                </div>
+                <div class="place"></div>
+                <div class="wrap-box2">
+                    <li class="box-img">
+                        <div class="w">
+                            <div class="f" style="background-image:url({{ recmdList[1].posterfid }})">
+                                <!-- 视频 -->
+                                <div ng-if="recmdList[1].type == 1 || recmdList[1].type==4 || recmdList[1].type > 5">
+                                    <img src="res/img/icon_play.png" class="icon-center-play">
+                                </div>
+                            </div>
+                            <div class="b cont">
+                                <h3>{{ recmdList[1].name }}</h3>
+                                <p ng-click="search()">{{ recmdList[1].description || '暂无' }} </p>
+                                <div class="goDetail" >查看详情</div>
+                                <img ng-click="search()" src="res/img/play_icon.png" class="play-icon" width="31%">
+                                <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="place"></div>
+            </div>
+            <div class="part1-2 fl">
+                <div class="wrap-box1">
+                    <li class="box-img" >
+                        <div class="w">
+                            <div class="f" style="background-image:url({{ recmdList[2].posterfid }})">
+                                <div ng-if="recmdList[2].type == 1 || recmdList[2].type==4 || recmdList[2].type > 5">
+                                    <img src="res/img/icon_play.png" class="icon-center-play">
+                                </div>
+                            </div>
+                            <div class="b cont">
+                                <h3>{{ recmdList[2].name }}</h3>
+                                <p>{{ recmdList[2].description || '暂无' }}</p>
+                                <div class="goDetail">查看详情</div>
+                                <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                                <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="place"></div>
+                <div class="wrap-box2">
+                    <li class="box-img" >
+                        <div class="w">
+                            <div class="f" style="background-image:url({{ recmdList[3].posterfid }})">
+                                <div ng-if="recmdList[3].type == 1 || recmdList[3].type==4 || recmdList[3].type > 5">
+                                    <img src="res/img/icon_play.png" class="icon-center-play">
+                                </div>
+                            </div>
+                            <div class="b cont">
+                                <h3>{{ recmdList[3].name }}</h3>
+                                <p>{{ recmdList[3].description || '暂无' }}</p>
+                                <div class="goDetail">查看详情</div>
+                                <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                                <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="place"></div>
+            </div>
+            <div class="part1-3 fl">
+                <li class="box-img" >
+                    <div class="w">
+                        <div class="f" style="background-image:url({{ recmdList[4].posterfid }})">
+                            <div ng-if="recmdList[4].type == 1 || recmdList[4].type==4 || recmdList[4].type > 5">
+                                <img src="res/img/icon_play.png" class="icon-center-play">
+                            </div>
+                        </div>
+                        <div class="b cont">
+                            <h3>{{ recmdList[4].name }}</h3>
+                            <p>{{ recmdList[4].description || '暂无' }}</p>
+                            <div class="goDetail">查看详情</div>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                            <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <div class="part1-4 fl">
+                <div class="box-img local" ng-click="local()"></div>
+                <div class="place"></div>
+                <div class="box-img search" ng-click="search()"></div>
+                <div class="place"></div>
+                <li class="box-img" >
+                    <div class="w">
+                        <div class="f" style="background-image:url({{ recmdList[5].posterfid }})">
+                            <div ng-if="recmdList[5].type == 1 || recmdList[5].type==4 || recmdList[5].type > 5">
+                                <img src="res/img/icon_play.png" class="icon-center-play">
+                            </div>
+                        </div>
+                        <div class="b cont">
+                            <h3>{{ recmdList[5].name }}</h3>
+                            <p>{{ recmdList[5].description || '暂无' }}</p>
+                            <div class="goDetail">查看详情</div>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                            <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        </div>
+                    </div>
+                </li>
+                <div class="place"></div>
+            </div>
+        </div>
+        <div class="place"></div>
+        <div class="part2">
+            <ul>
+                <li>
+                    <div class="w">
+                        <div class="f" style="background-image:url({{ recmdList[6].posterfid }})">
+                            <div ng-if="recmdList[6].type == 1 || recmdList[6].type==4 || recmdList[6].type > 5">
+                                <img src="res/img/icon_play.png" class="icon-center-play">
+                            </div>
+                        </div>
+                        <div class="b cont">
+                            <h3>{{ recmdList[6].name }}</h3>
+                            <p>{{ recmdList[6].description || '暂无' }}</p>
+                            <div class="goDetail">查看详情</div>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                            <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="w">
+                        <div class="f" style="background-image:url({{ recmdList[7].posterfid }})">
+                            <div ng-if="recmdList[7].type == 1 || recmdList[7].type==4 || recmdList[7].type > 5">
+                                <img src="res/img/icon_play.png" class="icon-center-play">
+                            </div>
+                        </div>
+                        <div class="b cont">
+                            <h3>{{ recmdList[7].name }}</h3>
+                            <p>{{ recmdList[7].description || '暂无' }}</p>
+                            <div class="goDetail">查看详情</div>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                            <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="w">
+                        <div class="f" style="background-image:url({{ recmdList[8].posterfid }})">
+                            <div ng-if="recmdList[8].type == 1 || recmdList[8].type==4 || recmdList[8].type > 5">
+                                <img src="res/img/icon_play.png" class="icon-center-play">
+                            </div>
+                        </div>
+                        <div class="b cont">
+                            <h3>{{ recmdList[8].name }}</h3>
+                            <p>图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情</p>
+                            <div class="goDetail">查看详情</div>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                            <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="w">
+                        <div class="f" style="background-image:url({{ recmdList[9].posterfid }})">
+                            <div ng-if="recmdList[9].type == 1 || recmdList[9].type==4 || recmdList[9].type > 5">
+                                <img src="res/img/icon_play.png" class="icon-center-play">
+                            </div>
+                        </div>
+                        <div class="b cont">
+                            <h3>{{ recmdList[9].name }}</h3>
+                            <p>图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情</p>
+                            <div class="goDetail">查看详情</div>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                            <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<div class="w">
+                        <div class="f" style="background-image:url({{ recmdList[10].posterfid }})">
+                            <div ng-if="recmdList[10].type == 1 || recmdList[10].type==4 || recmdList[10].type > 5">
+                                <img src="res/img/icon_play.png" class="icon-center-play">
+                            </div>
+                        </div>
+                        <div class="b cont">
+                            <h3>{{ recmdList[10].name }}</h3>
+                            <p>图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情图片的详情</p>
+                            <a href="detail2?vid=rid$source=home"><div class="goDetail">查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%">
+                            <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="res/js/cfg.js"></script>
+    <script type="text/javascript" src="res/js/util.js"></script>
+	<script type="text/javascript" src="res/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="res/js/home_3d.js"></script>
+    <script type="text/javascript" src="res/js/angular.min.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+</body>
+</html>

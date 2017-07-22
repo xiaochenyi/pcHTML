@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta charset="utf-8">
+	<title>jquery的相关宽高</title>
+
+	<!--<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>-->
+    <!--<script type="text/javascript" src="./js/jquery.json-2.4.js"></script>-->
+    <!--<script type="text/javascript" src="./js/cfg.js"></script>-->
+    <!--<script type="text/javascript" src="./js/Network.js"></script>-->
+
+	<style type="text/css">
+		html,body{margin: 10px;border: 5px solid red;padding: 20px;}
+		.parentDiv{width: 800px;height: 500px;margin: 5px auto;background: #FF6600;border: 5px dashed green;padding: 30px; 
+			position: relative;}
+		.childrenDiv{width: 300px;height: 300px;margin: 50px auto;background: yellow;border: 5px solid black;padding: 5px;
+			/*box-sizing: border-box;*/position: relative;left: 10px;top:30px;}
+	</style>
+</head>
+<body  ng-app="myApp">
+	<div class="parentDiv"  ng-controller="personCtrl">
+		<div class="childrenDiv"></div>
+	</div>
+    <script type="text/javascript" src="res/js/angular.min.js"></script>
+	<script type="text/javascript">
+        var dataParam = { "seqId":1, "protover":"1.0", "termId":"53102", "userId":"0", "sessionId": 6333512254403000652,
+            "termNo":"76A0F38520987D4BECA0C892176523C1",
+            "termClass":4, "termType":2, "cliver":"0.0.1","data" : {
+                "vid" : 1088,
+                "page" : 0,
+                "size" : 6
+            }
+        };
+        var dataJsonObj = angular.toJson(dataParam, true);
+
+
+        var myApp=angular.module('myApp',[]);
+
+        myApp.controller('personCtrl',function($scope,$http){
+            $http.post('http://localhost:8080/cms-web/app/getVideoRelatedList', dataJsonObj).
+            then(function (result) {  //正确请求成功时处理
+                console.info(result);
+            }).catch(function (result) { //捕捉错误处理
+                console.info(result);
+            });
+        });
+
+
+
+	</script>
+</body>
+</html>

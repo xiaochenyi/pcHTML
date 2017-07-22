@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>视频详情</title>
+    <link rel="stylesheet" href="res/css/style.css" />
+    <link rel="stylesheet" href="res/css/video_details.css" />
+</head>
+<body ng-controller="personCtrl">
+
+<div class="wrap-main">
+    <div class="part1">
+        <div class="back" onclick="javascript:history.back();"><img src="res/img/icon_back.png"><span>返回</span></div>
+        <div class="part1-cont">
+            <div class="box-img" style="background-image: url({{ videoDetail.posterfid2 }})">
+                <img class="foot{{videoDetail.connerMark}}" src="res/img/foot{{videoDetail.connerMark}}.png">
+                <div class="time">{{videoDetail.duration | formatSecondsToTime}}</div>
+            </div>
+            <div class="box-info">
+                <div class="title clearfix"><h1>{{ videoDetail.vname }}</h1><p>豆瓣评分：<span>{{ videoDetail.doubanScore | scoreNum}}分</span></p></div>
+                <div class="info1 clearfix">
+                    <p class="p1"><span>地区：</span>{{ videoDetail.releasearea }}</p>
+                    <p class="p2"><span>类型：</span>{{ videoDetail.genre }}</p>
+                </div>
+                <div class="info1 clearfix">
+                    <p class="p1"><span>导演：</span>{{ videoDetail.director }}</p>
+                    <p class="p2"><span>主演：</span>{{ videoDetail.actor }}</p>
+                </div>
+                <div class="info2">
+                    <p><span>简介：</span>{{ videoDetail.storyplot }}</p>
+                </div>
+                <div class="btn">
+                    <div class="btn-play">播放</div>
+                    <div class="btn-offline">离线缓存</div>
+                    <div class="btn-vip">开通VIP1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="part2">
+        <h2>推荐视频</h2>
+        <div class="blank"></div>
+        <div class="arrowLeft"></div>
+        <div class="wrap-ul">
+            <ul>
+                <li ng-repeat="item in videoRelatedList">
+                    <div class="box-img" style="background-image: url({{ item.posterfid }})">
+                        <div class="bg"></div>
+                        <div class="play"><img src="res/img/icon_play.png" width="100%"></div>
+                        <img class="foot{{item.connerMark}}" src="res/img/foot{{item.connerMark}}.png">
+                        <div class="text">{{item.vname}}<span>{{item.duration | formatSecondsToTime}}</span></div>
+                    </div>
+                </li>
+                <li ng-repeat="item in videoRelatedList">
+                    <div class="box-img" style="background-image: url({{ item.posterfid }})">
+                        <div class="bg"></div>
+                        <div class="play"><img src="res/img/icon_play.png" width="100%"></div>
+                        <img class="foot{{item.connerMark}}" src="res/img/foot{{item.connerMark}}.png">
+                        <div class="text">{{item.vname}}<span>{{item.duration | formatSecondsToTime}}</span></div>
+                    </div>
+                </li>
+                <li ng-repeat="item in videoRelatedList">
+                    <div class="box-img" style="background-image: url({{ item.posterfid }})">
+                        <div class="bg"></div>
+                        <div class="play"><img src="res/img/icon_play.png" width="100%"></div>
+                        <img class="foot{{item.connerMark}}" src="res/img/foot{{item.connerMark}}.png">
+                        <div class="text">{{item.vname}}<span>{{item.duration | formatSecondsToTime}}</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="arrowRight"></div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="res/js/cfg.js"></script>
+<script type="text/javascript" src="res/js/util.js"></script>
+<script type="text/javascript" src="res/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="res/js/angular.min.js"></script>
+<script type="text/javascript" src="src/videoDetails.js"></script>
+<script>
+function www() {
+    console.log(22222222222);
+    $wrapUl = $(".part2 .wrap-ul");
+    ulWrapWidth = $wrapUl.width();
+    $li = $(".part2 ul li");
+    li_w = $wrapUl.width()/4;
+    $li.width(li_w); // 每一个li的宽度
+    li_len = $li.length;
+    $ul = $(".part2 ul");
+    // 初始化位置
+    $ul.css("left",0);
+    $ul.width(li_w * li_len); // 总宽度
+}
+window.onload = function() {
+    www();
+    var _click = false;
+    $(".arrowLeft").on("click", function() {
+        if(!_click) {
+            _click = true;
+            var _mLeft = $ul.css("left");
+            var _d = 0;
+            if(parseInt(_mLeft) < 0) {
+                _d = parseInt(_mLeft) + li_w;
+            }
+            $ul.stop(true, true).animate({
+                "left" : _d + "px"
+            }, 300, "linear",function() {
+                _click = false;
+            });
+        }
+    });
+
+    $(".arrowRight").on("click", function() {
+        if(!_click) {
+            _click = true;
+            var ulWidth = $ul.width();
+            var _mLeft = $ul.css("left");
+            var _d = -(ulWidth - ulWrapWidth) > 0 ? 0 : -(ulWidth - ulWrapWidth);
+
+            if(_d != 0 && parseInt(_mLeft) > -(ulWidth - ulWrapWidth)) {
+                _d = parseInt(_mLeft) - li_w;
+            }
+
+            $ul.stop(true, true).animate({
+                "left" : _d + "px"
+            }, 300, function() {
+                if(parseInt(_mLeft) == -(ulWidth - ulWrapWidth)) {
+                    $ul.css({left:_d + 'px'});
+                }
+                _click = false;
+            });
+        }
+    });
+
+};
+
+window.onresize = function() {
+    var res;
+    if (res){clearTimeout(res)}
+    res = setTimeout(function(){
+        www();
+    },20);
+}
+</script>
+</html>

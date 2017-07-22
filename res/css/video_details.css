@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+body{width: 100%; height: 100%;position: absolute;overflow: hidden}
+.box-img img{position: absolute;right: 6px;top:6px;}
+.box-img img.foot4,.part1-cont .box-img img.foot7{right: 0;top:0;}
+
+.wrap-main{width: 90%;margin: 0 auto;height: 100%;min-width: 930px;min-height:600px;font-size: 16px;/*background: red;*/}
+
+.part1{width:100%;height: 55%; /*background: yellow;*/}
+.part1 .back{width: 100%;font-size: 20px;color: #727272;padding: 2% 0;}
+.part1 .back *{vertical-align: middle;}
+.part1 .back img{width: 15px;height: 20px;padding-right: 8px;vertical-align: middle;}
+
+.part1-cont{width: 90%;height: 80%;margin: 0 auto; /*background: green;*/}
+.part1-cont .box-img{float:left;width: 24%;height: 100%;border-radius:7px;margin-right:4%;
+background: #000 no-repeat center center; background-size: cover;position: relative;}
+.part1-cont .box-img .time{position: absolute;right: 6px;bottom:6px;font-size: 14px;color: #999999;}
+.part1-cont .box-info{float:left;width: 72%;height: 100%;position: relative; /*background:yellowgreen*/}
+.part1-cont .box-info .title{border-bottom: 1px dashed #727272;font-size: 32px;color: #EB4346;margin-bottom: 10px;}
+.title h1{width: 60%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;font-size: 32px;float: left;}
+.part1-cont .box-info .title p{float: right; line-height: 56px;font-size: 20px;color: #666;}
+.part1-cont .box-info .title p span{color:#EB4346;}
+.part1-cont .box-info .info1,.part1-cont .box-info .info2{font-size: 16px;line-height: 38px;}
+.part1-cont .box-info .info1 span,.part1-cont .box-info .info2 span{color:#999999}
+.part1-cont .box-info .info1 .p1{width:28%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;float: left;}
+.part1-cont .box-info .info1 .p2{width:69%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;float: right;}
+.part1-cont .box-info .btn{position: absolute;bottom: 0;left: 0;}
+.part1-cont .box-info .btn * {display: inline-block;}
+.part1-cont .box-info .btn-play{width: 180px;height: 50px;background: rgb(235, 67, 70);border-radius: 50px;color: #fff;font-size: 16px;text-align: center;
+line-height: 50px;letter-spacing: 1px;}
+.btn-offline,.btn-vip{margin-left: 60px;font-size: 20px;}
+.btn-offline{background: url("../img/icon_download.png") no-repeat left center;text-indent:30px;}
+.btn-vip{background: url("../img/icon_vip.png") no-repeat left center;text-indent:30px;color:#D6A656;}
+.btn-offline:hover{background-image:url("../img/icon_download_hover.png");color:#EB4346;}
+.btn-vip:hover{background-image:url("../img/icon_vip_hover.png");color:#EB4346;}
+
+
+.part2{width:100%;height: 30%;margin-top: 4%; /*background: yellowgreen*/}
+.part2 h2{width: 90%; margin: 0 auto;border-left:3px solid #EB4346;font-size: 16px;text-indent: 10px;color: #EB4346;}
+.part2 .blank{height: 5%;}
+.part2 .wrap-ul{width: 92%;height: 85%;float:left;overflow: hidden;position: relative;}
+.part2 ul{min-width:100%;height:100%;position: absolute;left: 0;top:0}
+.part2 ul li{height:100%;/*background:red;*/float: left;}
+.part2 ul li .box-img{width: 95%;height: 100%; margin: 0 auto;background: #000 no-repeat center center;background-size: cover;border-radius: 7px;overflow: hidden;position: relative;}
+.part2 ul li .box-img .bg{width: 100%;height: 100%;position: absolute;background: rgba(0,0,0,0.3)}
+.part2 ul li .box-img .play{width: 38px;height: 38px;position: absolute;left: 50%;top:50%;margin: -19px;}
+.part2 ul li .box-img .text{width: 100%;line-height: 30px;color:#999999;font-size: 14px;position: absolute;left: 0;bottom: 0;background:rgba(0,0,0,0.26);text-indent: 7px;}
+.part2 ul li .box-img .text span{float: right;}
+.part2 ul li .box-img:hover .bg{background: rgba(0,0,0,0)}
+.part2 .arrowLeft{width: 4%;height:  85%;background: url("../img/arrow_left.png") no-repeat center center;float: left;}
+.part2 .arrowRight{width: 4%;height:  85%;background: url("../img/arrow_right.png") no-repeat center center;float: left;}
+.part2 .arrowLeft:hover{background-image: url("../img/arrow_left_hover.png")}
+.part2 .arrowRight:hover{background-image: url("../img/arrow_right_hover.png")}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

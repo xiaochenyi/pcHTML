@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>充值页面</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="page-pay">
+    <div class="head" style="background: #000;">
+        帝币余额：<span class="num">233</span>
+        <img class="icon" src="images/head.png">
+        <span class="name">天王盖地虎</span>
+        <a href="index.html"><span class="pay">返回首页</span></a>
+        <span class="logout">退出</span>
+    </div>
+
+    <div style="height: 50px;"></div>
+    <div class="title">
+        <div class="bg-line"></div>
+        <span>充值中心</span>
+    </div>
+    <div class="info">
+        <div class="account">充值账号：<span>276567665@qq.com</span></div>
+        <div class="money">帝币余额：<span>0</span></div>
+    </div>
+    <div class="methods">
+        <h3>支付方式：</h3>
+        <ul class="type clearfix">
+            <li class="on" data-type="1">支付宝支付</li>
+            <!--<li data-type="2">微信支付</li>-->
+        </ul>
+        <ul class="ms clearfix">
+            <li class="on" data-num="1">1元</li>
+            <li data-num="6">6元</li>
+            <li data-num="30">30元</li>
+            <li data-num="68">68元</li>
+            <li data-num="128">128元</li>
+            <li data-num="328">328元</li>
+            <li data-num="648">648元</li>
+        </ul>
+    </div>
+    <div class="exchange">
+        <h3>充值总金额：</h3>
+        <p>1元=10帝币</p>
+    </div>
+
+    <div style="text-align: center"><img src="images/btn-reg.png" class="btn"></div>
+</div>
+<div class="footer" style="border-top: 1px solid #444444;">
+    <p>
+        婉拒18岁以下未成年用户进入游戏<br>
+        健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+    </p>
+    <a href="jzjh/index.html" target="_blank"><img src="images/btn-jzjh.png"></a>
+    <img src="images/btn-jfcl.png" class="btn-jfcl">
+    <img src="images/logo.png" class="logo">
+</div>
+
+
+<!----------------弹窗（二维码）------------------->
+<div class="popup popup-code">
+    <div class="con">
+        <img src="images/icon-close.png" class="close" onclick="$('.popup-code').hide()">
+
+        <h2>支付宝扫码支付</h2>
+        <div class="code"><img src="" width="159" height="156" style="margin: 15px 0 0 24px;"></div>
+        <div class="get-status">我已成功付款</div>
+    </div>
+</div>
+<!----------------弹窗（充值成功）------------------->
+<div class="popup popup-status">
+    <div class="con">
+        <p>充值成功</p>
+        <img src="images/btn-confirm.png" width="208" onclick="$('.popup-status').hide()">
+    </div>
+</div>
+<!--弹窗----纠纷处理-->
+<div class="popup popup-agreement popup-jiufen">
+    <div class="con">
+        <img src="images/icon-close.png" class="close" onclick="$('.popup-jiufen').hide();">
+        <div class="top">
+            <div class="bg-line"></div>
+            <span>纠纷处理方式</span>
+        </div>
+        <dl class="agree">
+            <dt>1. 用户与用户之间的纠纷处理方式</dt>
+            <dd>1.1 我公司作为游戏发行，如若我公司运营游戏中的用户之间发生纠纷且无法协商一致的，可向国家相关行政机关或司法机关寻求解决包括但不限于向公安机关报案、申请仲裁或向人民法院提起诉讼等。我公司将会为实名注册用户提供必要的协助和支持，并根据有关行政机关和司法机关的要求承担一定的举证责任或采取必要措施。</dd>
+            <dd>1.2 我公司运营游戏的用户之间发生纠纷的，也可向我公司的客服人员投诉并举证。用户需提供与其账号注册信息一致的个人有效身份证件、必要的国家行政或司法机关文件和其他
+                我公司要求提供的相关证据。经我公司审核确认后，可以给予必要的协助和支持。</dd>
+            <dd>1.3 请您审阅并接受或不接受本协议，未成年人应在法定监护人陪同下审阅和履行，未成年人行使和履行本协议项下的权利和义务视为已获得了法定监护人的认可，您在享受东方视
+                界会员服务时必须完全、严格遵守本服务协议条款。</dd>
+
+            <dt>2. 用户与我公司之间的纠纷处理方式</dt>
+            <dd>2.1 如我公司运营游戏中的用户对我公司的服务有任何异议的，可以向我公司的客服人员投诉并举证。查证属实的，我公司将立即更正并按照现行法律规定给予用户必要的补偿。</dd>
+            <dd>2.2 如我公司运营游戏中的用户对我公司的服务有任何异议的，也可以向我公司所在地人民法院提起诉讼。</dd>
+            <dd>2.3 我公司用户纠纷解决客服电话010-62587688。</dd>
+        </dl>
+        <div class="f-logo"><img src="images/logo.png" width="100"></div>
+    </div>
+</div>
+
+<script src="js/localstorage.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/Network.js"></script>
+<script>
+//    var api = "http://172.16.100.24:8080/cms-web/app/www/";
+    var api = "http://172.16.121.27:8080/cms-web/app/www/";
+    var user = null;
+    var orderNo = "";
+    var curMoney = 1;
+    /**
+     * 查询支付成功接口
+     */
+    function notify(cbk) {
+        var url = api + "notify";
+        var success = function(res) {
+            if(res.success == 1) {
+                user.coin = res.coin;
+//                user.coin = 40; // 测试
+                DFSJ5.storage.setJSON("USER-INFO", user);
+                if(cbk) {
+                    cbk("充值成功");
+                }
+            } else {
+                if(cbk) {
+                    cbk("充值失败");
+                }
+            }
+        };
+        var error = function(res) {
+        };
+        var d = {
+            username: user.username,
+            orderNo: orderNo
+//            orderNo: "ww20170914143040435" // 测试
+        };
+        var data = JSON.stringify(d);
+        PCNEW.Network.req(url, success, error, data);
+    }
+    /**
+     * 支付接口
+     */
+    function pay() {
+        var url = api + "pay";
+        var success = function(res) {
+            orderNo = res.orderNo;
+
+            $('.popup-code .code img').attr("src", res.src);
+            $('.popup-code').show();
+        };
+        var error = function(res) {
+        };
+        var d = {
+            username: user.username,
+            money: curMoney,
+//            money: 0.01, // 测试用
+            payType: "1"
+        };
+        var data = JSON.stringify(d);
+        PCNEW.Network.req(url, success, error, data);
+    }
+    $(function() {
+        // 页面初始化数据
+        console.log("初始化数据");
+        user = DFSJ5.storage.getJSON("USER-INFO");
+        console.log(user);
+        if(user) {
+            $(".bg-index .btn").not(".btn-download").hide();
+//            $(".bg-index").height("78%");
+            var name = user.username;
+            var coin = user.coin;
+            $(".head .name").html(name);
+            $(".head .num").html(coin);
+            $(".account span").html(name);
+            $(".money span").html(coin);
+        } else {
+            alert("请先登录");
+            location.href = "index.html"
+        }
+        // 退出
+        $(".logout").click(function() {
+            DFSJ5.storage.remove("USER-INFO");
+            history.go(-1);
+        });
+        // 纠纷
+        $(".footer .btn-jfcl").click(function() {
+            $(".popup-jiufen").show();
+        });
+        // 确认提交
+        $(".page-pay .btn").click(function() {
+            pay();
+        });
+        // 我已成功付款
+        $(".get-status").click(function() {
+            var cbk = function(con) {
+                $('.popup-code').hide();
+                $('.popup-status .con p').html(con);
+                $('.popup-status').show();
+                if(con == "充值成功") {
+                    location.reload();
+                }
+            };
+            notify(cbk);
+        });
+        //
+        $("ul.type li").click(function() {
+            $(this).addClass("on").siblings().removeClass("on");
+        });
+        $("ul.ms li").click(function() {
+            $(this).addClass("on").siblings().removeClass("on");
+            var num = $(this).data("num");
+            $(".exchange p").html(num + "元=" + (num * 10) + "帝币");
+            curMoney = num;
+        });
+    })
+</script>
+</body>
+</html>

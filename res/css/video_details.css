@@ -15,7 +15,7 @@ body{width: 100%; height: 100%;position: absolute;overflow: hidden}
 .part1-cont .box-img{float:left;width: 24%;height: 100%;border-radius:7px;margin-right:4%;
 background: #000 no-repeat center center; background-size: cover;position: relative;}
 .part1-cont .box-img .time{position: absolute;right: 6px;bottom:6px;font-size: 14px;color: #999999;}
-.part1-cont .box-info{float:left;width: 72%;height: 100%;position: relative; /*background:yellowgreen*/}
+.part1-cont .box-info{float:left;width: 72%;height: 100%;position: relative;overflow: hidden; /*background:yellowgreen*/}
 .part1-cont .box-info .title{border-bottom: 1px dashed #727272;font-size: 32px;color: #EB4346;margin-bottom: 10px;}
 .title h1{width: 60%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;font-size: 32px;float: left;}
 .part1-cont .box-info .title p{float: right; line-height: 56px;font-size: 20px;color: #666;}
@@ -24,7 +24,7 @@ background: #000 no-repeat center center; background-size: cover;position: relat
 .part1-cont .box-info .info1 span,.part1-cont .box-info .info2 span{color:#999999}
 .part1-cont .box-info .info1 .p1{width:28%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;float: left;}
 .part1-cont .box-info .info1 .p2{width:69%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;float: right;}
-.part1-cont .box-info .btn{position: absolute;bottom: 0;left: 0;}
+.part1-cont .box-info .btn{width:100%;background:#252525;position: absolute;bottom: 0;left: 0;}
 .part1-cont .box-info .btn * {display: inline-block;}
 .part1-cont .box-info .btn-play{width: 180px;height: 50px;background: rgb(235, 67, 70);border-radius: 50px;color: #fff;font-size: 16px;text-align: center;
 line-height: 50px;letter-spacing: 1px;}

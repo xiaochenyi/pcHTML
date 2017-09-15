@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="InitController" ng-init="getPicData();getSpecData();">
+<head>
+    <meta charset="utf-8">
+    <title>图片专题重构(自定义滚动条，路由，瀑布流)</title>
+    <link type="text/css" rel="stylesheet" href="res/css/style.css">
+    <link type="text/css" rel="stylesheet" href="res/css/picture-list-cus.css">
+    <link type="text/css" rel="stylesheet" href="res/js/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+</head>
+<body ng-scrollbars ng-scrollbars-config="config">
+
+<div ui-view=""></div>
+
+
+<script type="text/javascript" src="res/js/cfg.js"></script>
+<script type="text/javascript" src="res/js/util.js"></script>
+<script type="text/javascript" src="res/js/jquery-2.1.1.min.js"></script>
+<script src="res/js/masonry-docs.min.js"></script>
+<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+<!--<script type="text/javascript" src="https://cdn.bootcss.com/ui-router-extras/0.1.3/ct-ui-router-extras.min.js"></script>-->
+<!--<script src="https://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>-->
+
+<script src="res/js/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="res/js/scrollbars.js"></script>
+<script src="res/js/angular-masonry.js"></script><!-- 瀑布流 -->
+<script src="src/pictureListUR.js"></script>
+
+</body>
+</html>

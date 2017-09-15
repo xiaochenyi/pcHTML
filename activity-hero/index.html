@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>让你的英雄打破平面，成为你的专属装饰画</title>
+    <style>
+        * {margin:0;padding:0;}
+        img{display: block;font-size: 0;line-height: 0;border:none;}
+        .pic,.foot{position: relative}
+        .btn-preview{position: absolute;left: 6%;bottom: 9.3%;}
+        .btn-add{position: absolute;right:5%;bottom: 9.3%;}
+        .foot-bg-btn{position:absolute;left: 0;bottom: 0;}
+        .btn-settlement{position: absolute;left: 35%;bottom: 11.5%}
+        .result{position:absolute;bottom:3%;left:0;width:100%;line-height: 1.5;color:#8F8AAE;font-size: 13px;text-align: center;}
+        .btn-share{position: absolute;right: 6%;bottom:30%;width: 10%;}
+
+        .preview{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.8);}
+        .preview .close{position:absolute;right:10px;top:10px;width: 20px;}
+        .preview .img{position: absolute;left: 50%;top:50%;width:100%;transform:translate(-50%, -50%)}
+
+        .loading{position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.8);color:#fff; text-align: center;z-index:21;}
+        .loading .con{position: absolute;width:100%;left:0;top:50%;transform:translateY(-50%)}
+        .loading img{width: 9%;margin: 0 auto;-webkit-animation: circle 1.2s infinite ease-in-out;
+            animation: circle 1.2s infinite ease-in-out;}
+        @-webkit-keyframes circle {
+            0%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes circle {
+            0%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"><img src="images/hero-banner.jpg" width="100%"></div>
+    <div class="note"><img src="images/hero-note.jpg" width="100%"></div>
+
+    <div class="pic pic1">
+        <img src="images/hero-pic1.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+    <div class="pic pic2">
+        <img src="images/hero-pic2.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+    <div class="pic pic3">
+        <img src="images/hero-pic3.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+    <div class="pic pic4">
+        <img src="images/hero-pic4.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+    <div class="pic pic5">
+        <img src="images/hero-pic5.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+    <div class="pic pic6">
+        <img src="images/hero-pic6.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+    <div class="pic pic7">
+        <img src="images/hero-pic7.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+    <div class="pic pic8">
+        <img src="images/hero-pic8.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+    <div class="pic pic9">
+        <img src="images/hero-pic9.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+    <div class="pic pic10">
+        <img src="images/hero-pic10.jpg" width="100%">
+        <img src="images/btn-preview.png" class="btn-preview" width="39%">
+        <img src="images/btn-add-off.png" class="btn-add" width="39%">
+    </div>
+
+    <div class="foot">
+        <img src="images/hero-foot.jpg" width="100%">
+        <img src="images/foot.png" width="100%" class="foot-bg-btn">
+        <img src="images/btn-settlement-off.png" width="30%" class="btn-settlement" data-status="false">
+        <p class="result">请将您感兴趣的图片购添加到购物车</p>
+        <img src="images/icon-share.png" class="btn-share">
+    </div>
+
+    <!-- loading -->
+    <div class="loading">
+        <div class="con">
+            <img src="images/icon_loading.png">
+        </div>
+    </div>
+
+    <!-- 预览 -->
+    <div class="preview">
+        <img src="images/hero-pic1.jpg" class="img">
+        <img src="images/icon_close.png" class="close" onclick="$('.preview').hide()">
+    </div>
+
+    <script src="js/Network.js"></script>
+    <script src="js/localstorage.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="src/index.js"></script>
+    <script>
+        $(function() {
+            PCNEW.IndexLayer.init();
+        });
+    </script>
+</body>
+</html>

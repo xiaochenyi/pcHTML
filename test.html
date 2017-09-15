@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<title>jquery的相关宽高</title>
 
-	<!--<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>-->
+	<script type="text/javascript" src="res/js/jquery-2.1.1.min.js"></script>
     <!--<script type="text/javascript" src="./js/jquery.json-2.4.js"></script>-->
     <!--<script type="text/javascript" src="./js/cfg.js"></script>-->
     <!--<script type="text/javascript" src="./js/Network.js"></script>-->
@@ -17,12 +17,67 @@
 			position: relative;}
 		.childrenDiv{width: 300px;height: 300px;margin: 50px auto;background: yellow;border: 5px solid black;padding: 5px;
 			/*box-sizing: border-box;*/position: relative;left: 10px;top:30px;}
+
+
+        p{width:50%;position: relative; line-height: 20px; max-height: 40px;overflow: hidden;}
+        p::after{content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
+            background: -webkit-linear-gradient(left, transparent, #fff 55%);
+            background: -o-linear-gradient(right, transparent, #fff 55%);
+            background: -moz-linear-gradient(right, transparent, #fff 55%);
+            background: linear-gradient(to right, transparent, #fff 55%);
+        }
 	</style>
+    <script>
+//        var img11 = new Image();
+//        img11.src = "http://app.img.3dov.cn/2017/4/17/375E74DF49BA271BAA33A94F8CC76550_800x450.jpg";
+//
+//        img11.onload = function() {
+//            document.body.appendChild(img11);
+//        };
+//
+//        img11.onerror = function() {
+//            img11.src = "res/img/more.png";
+//            document.body.appendChild(img11);
+//        }
+    </script>
 </head>
 <body  ng-app="myApp">
 	<div class="parentDiv"  ng-controller="personCtrl">
 		<div class="childrenDiv"></div>
 	</div>
+
+
+    <p>该方法适用范围广，但文字未超出行的情况下也会出现省略号,可结合js优化该方法。该方法适用范围广，但文字未超出行的情况下也会出现省略号,可结合js优化该方法。该方法适用范围广，但文字未超出行的情况下也会出现省略号,可结合js优化该方法。</p>
+
+
+
+    <img class="n" src="http://app.img.3dov.cn/2017/4/17/375E74DF49BA271BAA33A94F8CC76550_800x450.jpg" >
+
+    <script>
+        var imgdefereds=[];
+        $('img').each(function(){
+            var dfd=$.Deferred();
+            $(this).bind('load',function(){
+                dfd.resolve();
+                console.log("111111111111111111111");
+            }).bind('error',function(){
+                        //图片加载错误，加入错误处理
+                        // dfd.resolve();
+                        this.src = "res/img/more.png"
+                        console.log("222222222222222222");
+            });
+            if(this.complete) setTimeout(function(){
+                dfd.resolve();
+            },1000);
+            imgdefereds.push(dfd);
+        })
+        $.when.apply(null,imgdefereds).done(function(){
+            console.log('eeeeeeeeeeeeeeeeeeee')
+        });
+    </script>
+
+
+
     <script type="text/javascript" src="res/js/angular.min.js"></script>
 	<script type="text/javascript">
         var dataParam = { "seqId":1, "protover":"1.0", "termId":"53102", "userId":"0", "sessionId": 6333512254403000652,
@@ -39,7 +94,7 @@
         var myApp=angular.module('myApp',[]);
 
         myApp.controller('personCtrl',function($scope,$http){
-            $http.post('http://localhost:8080/cms-web/app/getVideoRelatedList', dataJsonObj).
+            $http.post('http://app.api.3dov.cn/app/getVideoRelatedList', dataJsonObj).
             then(function (result) {  //正确请求成功时处理
                 console.info(result);
             }).catch(function (result) { //捕捉错误处理

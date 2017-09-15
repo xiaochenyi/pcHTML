@@ -1,0 +1,24 @@
+<div class="tab-title">
+    <a href="#/jingxuan"><div>精选</div></a>
+    <a href="#/zhuanti"><div class="on">专题</div></a>
+</div>
+<div class="scroll-cont">
+    <div class="blank" style="height: 55px;"></div>
+
+    <div class="special" ng-controller="ZTController">
+        <ul class="clearfix">
+            <li ng-repeat="item in specialList" on-finish-render-filters22>
+                <a href="special-detail.html?specialId={{item.id}}">
+                    <div class="box">
+                        <div class="img"><img ng-src="{{item.posterfid | filterImgUrl}}" err-src="res/img/search.png"/></div>
+                        <div class="box-hover"><span>{{item.description}}</span></div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="more" ng-click="getSpecMore()" ng-if="!isSpecEnd"><img src="res/img/icon_more_on.png"> </div>
+        <div class="more" ng-if="isSpecEnd"><img src="res/img/icon_more_off.png"></div>
+    </div>
+
+</div>

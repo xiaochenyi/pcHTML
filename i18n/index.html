@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/i18next/8.4.3/i18next.js"></script>-->
+    <script src="i18next-1.11.2.js"></script>
+</head>
+<body>
+    <div class="content">
+        <h2 data-i18n="test.title">测试</h2>
+        <span data-i18n="test.content">这是一个测试</span>
+    </div>
+
+<script>
+    function localize(lng) {
+        var deferred = $.i18n.init({
+            lng         : lng || 'zh-CN',      //翻译成的语言
+            load        : 'current',           //加载当前设置的语言包
+            getAsync    : false,               //是否异步调用语言包
+            cookieName  : 'i18n',      //cookie的名称
+            preload     : ['zh-CN', 'en-US'],  //预加载语言包
+            fallbackLng : ['zh-CN', 'en-US'],  //如果没有设置，则默认为“开发”。如果打开，所有丢失的键/值将被翻译成该语言。
+            resGetPath  : '__lng__/__ns__.json', // 加载资源的路径
+            ns: { namespaces: ['test'], defaultNs: 'test'},             //加载的语言包
+            useLocalStorage : false,                                              //是否将语言包存储在localstorage
+            localStorageExpirationTime: 86400000                                  // 有效周期，单位ms。默认1周
+        });
+        return deferred;
+    }
+
+    $(function() {
+        localize('en-US').done(function(){ $('div.content').i18n();});
+    })
+
+
+</script>
+
+</body>
+</html>

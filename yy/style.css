@@ -1,0 +1,23 @@
+/* Styles go here */
+
+ul.tabs {
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.tabs > li {
+    float: left;
+    cursor: pointer;
+    padding: .5em 2em .5em 2em;
+    background-color: #DDD;
+}
+
+ul.tabs > li:hover {
+    background-color: #88C;
+}
+
+ul.tabs > li.selected {
+    background-color: #99D;
+}

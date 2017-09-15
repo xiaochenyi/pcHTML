@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>专题详情重构</title>
+    <link type="text/css" rel="stylesheet" href="res/css/style.css">
+    <link type="text/css" rel="stylesheet" href="res/css/scrollbar.css">
+    <link type="text/css" rel="stylesheet" href="res/css/picture_details.css">
+</head>
+<body ng-controller="ZTdetailCtrl" ng-init="getPicData()">
+
+<div class="main-demo">
+    <div class="back" onclick="javascript:history.go(-1);"><img src="res/img/icon_back.png"><span>返回</span></div>
+
+    <h1>{{ name }}</h1>
+
+    <p class="desc">描述：{{ description }}</p>
+    <ul>
+        <li ng-repeat="item in refSpecialList">
+            <div class="box">
+                <div class="img"><img src="images/1.jpg" ng-src="{{item.iconfid}}"></div>
+                <div class="box-hover"><span>{{ item.pDescription }}</span></div>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+<script type="text/javascript" src="res/js/cfg.js"></script>
+<script type="text/javascript" src="res/js/util.js"></script>
+<!--<script type="text/javascript" src="res/js/jquery-2.1.1.min.js"></script>-->
+<script type="text/javascript" src="res/js/angular.min.js"></script>
+<script type="text/javascript" src="src/specDetail.js"></script>
+
+
+</body>
+</html>

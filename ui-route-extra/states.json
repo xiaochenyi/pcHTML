@@ -1,0 +1,7 @@
+[{
+    "type" : "ocLazyLoad",
+    "moduleName":"PageModule",
+    "stateName" : "page",
+    "url" : "/page",
+    "src" : "apps/page/PageModule.js"
+}]

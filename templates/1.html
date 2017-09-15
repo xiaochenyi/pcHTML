@@ -1,0 +1,22 @@
+<div class="tab-title">
+    <a href="#/jingxuan"><div class="on">精选</div></a>
+    <a href="#/zhuanti"><div>专题</div></a>
+</div>
+<div class="scroll-cont">
+    <div class="blank" style="height: 55px;"></div>
+
+    <div class="picture" ng-controller="JXController" style="width: 100%;">
+        <ul id="ul" class="clearfix grid" masonry='{ "transitionDuration" : "0" , "itemSelector" : ".tile"}'>
+            <!-- items -->
+            <li class="li tile" masonry-tile ng-repeat="item in pictureList" on-finish-render-filters style="margin-bottom: 8px;">
+                <div class="box" ng-click="goPlay(item)">
+                    <img ng-src="{{item.iconfid | filterImgUrl}}" err-src="res/img/search.png" />
+                    <div class="box-hover"><span>{{item.description}}</span></div>
+                </div>
+            </li>
+        </ul>
+        <div class="more" ng-click="getPicMore()" ng-if="!isPicEnd"><img src="res/img/icon_more_on.png"></div>
+        <div class="more" ng-if="isPicEnd"><img src="res/img/icon_more_off.png"></div>
+    </div>
+
+</div>

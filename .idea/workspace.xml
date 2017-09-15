@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/index.js" description="var dataJsonObj = angular.toJson(dataParam, true);" line="11" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="9e38df6d-41fc-4e1d-aeb7-beefc5e2181b" name="Default" comment="" />
+    <list default="true" readonly="true" id="688b5db8-4eef-428c-9d30-3f4146070421" name="Default" comment="" />
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,49 +23,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="picture-list-cus.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/picture-list-cus.html">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/audit-game/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="256" column="6" selection-start="7445" selection-end="8443" vertical-scroll-proportion="-21.35484" vertical-offset="372" max-vertical-offset="1232">
+            <state line="35" column="15" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.4430538" vertical-offset="416" max-vertical-offset="13970">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#ul#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#dd#52;n#dl#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#17453#21071#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="waterfall.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/js/waterfall.js">
+      <file leaf-file-name="pay.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/audit-game/pay.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="7" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.3735763" vertical-offset="904" max-vertical-offset="2024">
-              <folding />
+            <state line="111" column="21" selection-start="4035" selection-end="4035" vertical-scroll-proportion="-28.711864" vertical-offset="264" max-vertical-offset="4488">
+              <folding>
+                <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="picture-list-cus.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/css/picture-list-cus.css">
+      <file leaf-file-name="reset.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/audit-game/css/reset.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="44" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1430">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scrollbar.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/css/scrollbar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="252" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="101" selection-start="6" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1430">
+            <state line="97" column="89" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.0" vertical-offset="1395" max-vertical-offset="2266">
               <folding />
             </state>
           </provider>
@@ -84,35 +68,93 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/cfg.js" />
-        <option value="$PROJECT_DIR$/public/Network.js" />
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/res/css/home_3d.css" />
-        <option value="$PROJECT_DIR$/res/js/home_3d.js" />
-        <option value="$PROJECT_DIR$/chuangqiang.html" />
-        <option value="$PROJECT_DIR$/video-detail-scale.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/res/css/video_details.css" />
-        <option value="$PROJECT_DIR$/res/js/util.js" />
-        <option value="$PROJECT_DIR$/src/videoDetails.js" />
-        <option value="$PROJECT_DIR$/video-detail.html" />
-        <option value="$PROJECT_DIR$/res/css/index.css" />
+        <option value="$PROJECT_DIR$/yy/index.html" />
+        <option value="$USER_HOME$/Desktop/activity-print/index.html" />
+        <option value="$PROJECT_DIR$/pjax/demo1.html" />
+        <option value="$PROJECT_DIR$/pjax/res1.php" />
+        <option value="$PROJECT_DIR$/pjax/res2.php" />
+        <option value="$PROJECT_DIR$/pjax/demo2.html" />
+        <option value="$PROJECT_DIR$/pjax/tpls/cont2.html" />
+        <option value="$PROJECT_DIR$/pjax/tpls/cont1.html" />
+        <option value="$PROJECT_DIR$/pjax/6.html" />
+        <option value="$PROJECT_DIR$/pjax/7.html" />
+        <option value="$PROJECT_DIR$/pjax/5.html" />
+        <option value="$PROJECT_DIR$/special-detail.html" />
+        <option value="$PROJECT_DIR$/src/pictureList.js" />
+        <option value="$PROJECT_DIR$/pjax/1.html" />
+        <option value="$PROJECT_DIR$/pjax/2.html" />
+        <option value="$PROJECT_DIR$/pjax/3.html" />
+        <option value="$PROJECT_DIR$/pjax/4.html" />
+        <option value="$PROJECT_DIR$/picture-list-ui-route.html" />
+        <option value="$PROJECT_DIR$/templates/1.html" />
+        <option value="$PROJECT_DIR$/src/pictureListUR.js" />
+        <option value="$PROJECT_DIR$/i18n/en-US/test.json" />
+        <option value="$PROJECT_DIR$/i18n/zh-CN/test.json" />
+        <option value="$PROJECT_DIR$/i18n/index.html" />
+        <option value="$PROJECT_DIR$/Hello.ts" />
+        <option value="$PROJECT_DIR$/activity-hero/js/Network.js" />
+        <option value="$PROJECT_DIR$/order.html" />
+        <option value="$PROJECT_DIR$/activity-hero/data/data.json" />
+        <option value="$PROJECT_DIR$/activity-hero/src/order.js" />
+        <option value="$PROJECT_DIR$/address.html" />
+        <option value="$PROJECT_DIR$/activity-hero/data/address.json" />
+        <option value="$PROJECT_DIR$/activity-hero/address.html" />
+        <option value="$PROJECT_DIR$/activity-hero/src/address.js" />
+        <option value="$PROJECT_DIR$/audit-game/index-suc.html" />
+        <option value="$PROJECT_DIR$/audit-game/jzjh/res/css.css" />
+        <option value="$PROJECT_DIR$/audit-game/jzjh/style/css.css" />
+        <option value="$PROJECT_DIR$/audit-game/jzjh/faq.html" />
+        <option value="$PROJECT_DIR$/audit-game/jzjh/notice.html" />
+        <option value="$PROJECT_DIR$/audit-game/jzjh/index.html" />
+        <option value="$PROJECT_DIR$/audit-game/jzjh/service.html" />
         <option value="$PROJECT_DIR$/res/js/cfg.js" />
-        <option value="$PROJECT_DIR$/index-3d.html" />
-        <option value="$PROJECT_DIR$/res/css/picture-list.css" />
-        <option value="$PROJECT_DIR$/picture-list.html" />
-        <option value="$PROJECT_DIR$/res/css/picture-list-cus.css" />
-        <option value="$PROJECT_DIR$/picture-list-cus.html" />
-        <option value="$PROJECT_DIR$/res/js/waterfall.js" />
+        <option value="$PROJECT_DIR$/activity-hero/index-share.html" />
+        <option value="$PROJECT_DIR$/activity-hero/index.html" />
+        <option value="$PROJECT_DIR$/activity-hero/order.html" />
+        <option value="$PROJECT_DIR$/audit-game/js/Network.js" />
+        <option value="$PROJECT_DIR$/activity-hero/src/index.js" />
+        <option value="$PROJECT_DIR$/vue-cnode/index.html" />
+        <option value="$PROJECT_DIR$/audit-game/css/index.css" />
+        <option value="$PROJECT_DIR$/audit-game/css/reset.css" />
+        <option value="$PROJECT_DIR$/audit-game/pay.html" />
+        <option value="$PROJECT_DIR$/audit-game/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1064" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1918" />
+    <option name="height" value="1044" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -140,7 +182,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -155,7 +196,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="pcNew" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -165,96 +206,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="pcNew" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="audit-game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/native-h5" />
-    <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="&#10;d&#10;i" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="SearchEverywhereHistory" value="" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="E:/native-h5" />
+    <property name="options.lastSelected" value="Template Data Languages" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\cms\cms-web\src\main\webapp\statics\html\res\js" />
-      <recent name="D:\project\cms\cms-web\src\main\webapp\statics\html\res\css" />
-      <recent name="D:\project\cms\cms-web\src\main\webapp\statics\html" />
-      <recent name="D:\project\cms\cms-web\src\main\webapp\statics\html\src" />
-      <recent name="D:\project\cms\cms-web\src\main\webapp\statics\html\res\img" />
+      <recent name="D:\H5-projects\pcNew" />
+      <recent name="D:\H5-projects\pcNew\audit-game\js" />
+      <recent name="D:\H5-projects\pcNew\activity-hero\images" />
+      <recent name="D:\H5-projects\pcNew\activity-hero" />
+      <recent name="D:\H5-projects\pcNew\activity-hero\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\cms\cms-web\src\main\webapp\statics\html\res" />
+      <recent name="D:\H5-projects\pcNew\audit-game\jzjh\js" />
+      <recent name="D:\H5-projects\pcNew\audit-game\jzjh" />
+      <recent name="D:\H5-projects\pcNew\audit-game\jzjh\res\style" />
+      <recent name="D:\H5-projects\pcNew\activity-hero" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
+  <component name="RunManager" selected="JavaScript Debug.order.html">
+    <configuration default="false" name="address.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/html/activity-hero/address.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="order.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/html/activity-hero/order.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -265,8 +265,14 @@
       <option name="testName" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -276,6 +282,10 @@
       <setting name="preferredDebugBrowser" value="CHROME" />
       <method />
     </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
@@ -283,7 +293,16 @@
       <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.address.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.order.html" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.order.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.address.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
@@ -307,30 +326,30 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9e38df6d-41fc-4e1d-aeb7-beefc5e2181b" name="Default" comment="" />
-      <created>1500100391345</created>
-      <updated>1500100391345</updated>
+      <changelist id="688b5db8-4eef-428c-9d30-3f4146070421" name="Default" comment="" />
+      <created>1503372678497</created>
+      <updated>1503372678497</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
+    <frame x="1" y="1" width="1918" height="1044" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1412757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13745338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3995657" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -350,350 +369,289 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/testActivity.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="40" selection-start="11397" selection-end="11397" vertical-scroll-proportion="0.0" vertical-offset="4620" max-vertical-offset="4884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="23" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0" vertical-offset="451" max-vertical-offset="3630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-3d.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="4455" max-vertical-offset="5302">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/video-detail-scale.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="5" selection-start="5709" selection-end="5871" vertical-scroll-proportion="0.0" vertical-offset="2849" max-vertical-offset="3696">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/video_details.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="59" selection-start="2212" selection-end="2212" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/videoDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="15" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="2310" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/video-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="55" selection-start="4572" selection-end="4572" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3190">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/video_details.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2112">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-3d.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="42" selection-start="11825" selection-end="11825" vertical-scroll-proportion="0.0" vertical-offset="4356" max-vertical-offset="5214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/home_3d.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="16" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0" vertical-offset="1914" max-vertical-offset="2750" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/index-3d.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="66" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="1650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-3d.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="60" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4994">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/home_3d.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="76" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="2706" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="11" selection-start="954" selection-end="964" vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="2266">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/index-3d.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="72" selection-start="3384" selection-end="3384" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="1518">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="177" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-3d.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="96" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5104">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/index-3d.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="550" max-vertical-offset="1518">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="572" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="484" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="13" selection-start="1010" selection-end="1950" vertical-scroll-proportion="0.0" vertical-offset="452" max-vertical-offset="1298" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="53.580647" vertical-offset="1661" max-vertical-offset="2508" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index-3d.html">
+    <entry file="file://$PROJECT_DIR$/yy/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="27" selection-start="2800" selection-end="2800" vertical-scroll-proportion="0.0" vertical-offset="1430" max-vertical-offset="2662">
-          <folding />
-        </state>
+        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1628" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/home_3d.js">
+    <entry file="file://$PROJECT_DIR$/activity-hero/data/address.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="9" selection-start="2669" selection-end="2669" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2750" />
+        <state line="5" column="22" selection-start="76" selection-end="85" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="1034" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/angular.min.js">
+    <entry file="file://$PROJECT_DIR$/ui-route-extra/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7392">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="13" selection-start="1010" selection-end="1950" vertical-scroll-proportion="0.0" vertical-offset="452" max-vertical-offset="1298" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/Network.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="317" selection-end="317" vertical-scroll-proportion="0.30102623" vertical-offset="0" max-vertical-offset="968" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/home_3d.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="235" selection-end="235" vertical-scroll-proportion="0.23321554" vertical-offset="0" max-vertical-offset="5874" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/home_3d.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="50" selection-start="3818" selection-end="3860" vertical-scroll-proportion="0.8496583" vertical-offset="2180" max-vertical-offset="3058" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="27" selection-start="693" selection-end="701" vertical-scroll-proportion="0.49382716" vertical-offset="198" max-vertical-offset="2310">
-          <folding />
-        </state>
+        <state line="22" column="0" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2134" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/css/video_details_scale.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2178">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/embed.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="790" selection-end="790" vertical-scroll-proportion="0.33256352" vertical-offset="306" max-vertical-offset="14586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/index-3d.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="2655" selection-end="2844" vertical-scroll-proportion="0.523918" vertical-offset="772" max-vertical-offset="1650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/sHover.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="9" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="132">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="12" selection-start="1954" selection-end="1962" vertical-scroll-proportion="0.4074074" vertical-offset="1287" max-vertical-offset="2178" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/video-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="46" selection-start="4072" selection-end="4072" vertical-scroll-proportion="-8.5161295" vertical-offset="1518" max-vertical-offset="3388">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/videoDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="52" selection-start="435" selection-end="435" vertical-scroll-proportion="0.4691358" vertical-offset="0" max-vertical-offset="1804" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2178" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/css/video_details.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="84" selection-start="258" selection-end="292" vertical-scroll-proportion="-0.15034169" vertical-offset="264" max-vertical-offset="1716">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1716" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/cfg.js">
+    <entry file="file://$PROJECT_DIR$/res/css/picture_details.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="256" selection-end="256" vertical-scroll-proportion="0.24691358" vertical-offset="0" max-vertical-offset="891">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/瀑布流布局源码/jQuery/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.05116279" vertical-offset="0" max-vertical-offset="3168">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/video-detail-scale.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="20" selection-start="3961" selection-end="3961" vertical-scroll-proportion="0.72255015" vertical-offset="1698" max-vertical-offset="3696">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-3d.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="30" selection-start="5649" selection-end="5649" vertical-scroll-proportion="0.13695395" vertical-offset="2238" max-vertical-offset="5302">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="275" selection-end="275" vertical-scroll-proportion="0.20465116" vertical-offset="0" max-vertical-offset="5104">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="21" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.33333334" vertical-offset="1023" max-vertical-offset="4994">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/picture-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="55" selection-start="511" selection-end="511" vertical-scroll-proportion="-6.338983" vertical-offset="0" max-vertical-offset="2156">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/picture-list.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="22" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="946">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/qwrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/js-csb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10802">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="101" selection-start="6" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1430">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/picture-list-cus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="6" selection-start="7445" selection-end="8443" vertical-scroll-proportion="-21.35484" vertical-offset="372" max-vertical-offset="1232">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#ul#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/css/scrollbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="252" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1738" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/css/picture-list-cus.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1430">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2469136" vertical-offset="1111" max-vertical-offset="2002" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/css/popup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/css/home_3d.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5874" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/css/game.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/css/scrollbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="18" selection-end="463" vertical-scroll-proportion="0.024691358" vertical-offset="0" max-vertical-offset="891" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity-hero/js/Network.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="31" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="946" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/jzjh/style/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="16" selection-start="964" selection-end="964" vertical-scroll-proportion="0.5308642" vertical-offset="869" max-vertical-offset="7194" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/jzjh/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="92" selection-start="821" selection-end="821" vertical-scroll-proportion="0.19480519" vertical-offset="165" max-vertical-offset="2002" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/jzjh/notice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="92" selection-start="821" selection-end="821" vertical-scroll-proportion="0.38961038" vertical-offset="0" max-vertical-offset="4092" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/jzjh/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="63" selection-start="4256" selection-end="4256" vertical-scroll-proportion="0.33333334" vertical-offset="1795" max-vertical-offset="3762" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/jzjh/service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="71" selection-start="2570" selection-end="2570" vertical-scroll-proportion="0.0" vertical-offset="1043" max-vertical-offset="2442" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/js/cfg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="45" selection-end="45" vertical-scroll-proportion="0.074074075" vertical-offset="0" max-vertical-offset="891" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="41" selection-start="8857" selection-end="8857" vertical-scroll-proportion="0.16627906" vertical-offset="3245" max-vertical-offset="7502" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="427" selection-end="427" vertical-scroll-proportion="0.32098764" vertical-offset="0" max-vertical-offset="14586">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/waterfall.js">
+    <entry file="file://$PROJECT_DIR$/activity-hero/src/address.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="7" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.3735763" vertical-offset="904" max-vertical-offset="2024">
+        <state line="41" column="3" selection-start="48" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1034" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity-hero/address-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="15" selection-start="1323" selection-end="1323" vertical-scroll-proportion="-12.129032" vertical-offset="306" max-vertical-offset="1628" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity-hero/src/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="49" selection-end="2757" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity-hero/js/vue.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="920" selection-end="1019" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="2530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1562" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity-hero/order-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="101" selection-start="1623" selection-end="1695" vertical-scroll-proportion="0.4372093" vertical-offset="680" max-vertical-offset="2530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity-hero/index-share.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="78" selection-start="4879" selection-end="4879" vertical-scroll-proportion="0.1322314" vertical-offset="2154" max-vertical-offset="3036" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../path.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="664" selection-end="930" vertical-scroll-proportion="0.44444445" vertical-offset="0" max-vertical-offset="2992" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/en-US/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/zh-CN/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/js/localstorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="10" selection-start="883" selection-end="889" vertical-scroll-proportion="0.4695752" vertical-offset="405" max-vertical-offset="1276">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/js/Network.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="490" selection-end="490" vertical-scroll-proportion="0.44316876" vertical-offset="10" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity-hero/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="32" selection-start="5788" selection-end="5788" vertical-scroll-proportion="-21.64516" vertical-offset="2233" max-vertical-offset="3124" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity-hero/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="276" column="45" selection-start="12149" selection-end="12153" vertical-scroll-proportion="-0.45932415" vertical-offset="6439" max-vertical-offset="7238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity-hero/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="33" selection-start="4646" selection-end="4646" vertical-scroll-proportion="0.60854095" vertical-offset="2413" max-vertical-offset="3256" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/i18next-1.11.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="51414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="6" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-19.580645" vertical-offset="119" max-vertical-offset="990" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/picture-list-ui-route.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="534" selection-end="534" vertical-scroll-proportion="-7.806452" vertical-offset="0" max-vertical-offset="792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2948" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="204" selection-end="459" vertical-scroll-proportion="0.40413317" vertical-offset="0" max-vertical-offset="2640" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pictureListUR.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="32" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="4312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-cnode/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="652" selection-end="652" vertical-scroll-proportion="-5.1874247" vertical-offset="4576" max-vertical-offset="5434" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/index-suc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="42" selection-start="729" selection-end="729" vertical-scroll-proportion="0.60238093" vertical-offset="0" max-vertical-offset="946">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="0" selection-start="7625" selection-end="7625" vertical-scroll-proportion="0.8974359" vertical-offset="1694" max-vertical-offset="2596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="89" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.0" vertical-offset="1395" max-vertical-offset="2266">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="21" selection-start="4035" selection-end="4035" vertical-scroll-proportion="-28.711864" vertical-offset="264" max-vertical-offset="4488">
+          <folding>
+            <element signature="n#style#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audit-game/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="15" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.4430538" vertical-offset="416" max-vertical-offset="13970">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dd#52;n#dl#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#17453#21071#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

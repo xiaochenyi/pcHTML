@@ -12,86 +12,141 @@
         <div class="part1 clearfix">
             <div class="part1-1 fl">
                 <div class="li">
-                    <div class="f" style="background-image:url({{ recmdList[0].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[0].posterfid || 'res/img/more.png' }})">
                         <!-- 视频 -->
                         <div ng-if="recmdList[0].type == 1 || recmdList[0].type==4 || recmdList[0].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[0].name }}</h3>
+                        <h3>{{ recmdList[0].name }}</h3>
                         <p>{{ recmdList[0].description || '暂无' }} </p>
-                        <a href="video-detail.html?vid={{ recmdList[0].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[0].type == 1 || recmdList[0].type==4 || recmdList[0].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[0].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="playvideo2(recmdList[0])">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[0].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[0].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="place"></div>
                 <div class="li">
-                    <div class="f" style="background-image:url({{ recmdList[1].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[1].posterfid || 'res/img/more.png' }})">
                         <!-- 视频 -->
                         <div ng-if="recmdList[1].type == 1 || recmdList[1].type==4 || recmdList[1].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[1].name }}</h3>
+                        <h3>{{ recmdList[1].name }}</h3>
                         <p>{{ recmdList[1].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[1].type == 1 || recmdList[1].type==4 || recmdList[1].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[1].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="playvideo2(recmdList[1])">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[1].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[1].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="place"></div>
             </div>
             <div class="part1-2 fl">
                 <div class="li">
-                    <div class="f" style="background-image:url({{ recmdList[2].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[2].posterfid || 'res/img/more.png' }})">
                         <!-- 视频 -->
-                        <div ng-if="recmdList[0].type == 1 || recmdList[0].type==4 || recmdList[0].type > 5">
+                        <div ng-if="recmdList[2].type == 1 || recmdList[2].type==4 || recmdList[2].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[2].name }}</h3>
+                        <h3>{{ recmdList[2].name }}</h3>
                         <p>{{ recmdList[2].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[2].type == 1 || recmdList[2].type==4 || recmdList[2].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[2].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="play()">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[2].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[2].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="place"></div>
                 <div class="li">
-                    <div class="f" style="background-image:url({{ recmdList[3].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[3].posterfid  || 'res/img/more.png'}})">
                         <!-- 视频 -->
                         <div ng-if="recmdList[3].type == 1 || recmdList[3].type==4 || recmdList[3].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[0].name }}</h3>
-                        <p>{{ recmdList[0].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        <h3>{{ recmdList[3].name }}</h3>
+                        <p>{{ recmdList[3].description || '暂无' }} </p>
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[3].type == 1 || recmdList[3].type==4 || recmdList[3].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[3].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="play()">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[3].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[3].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="place"></div>
             </div>
             <div class="part1-3 fl">
                 <div class="li">
-                    <div class="f" style="background-image:url({{ recmdList[4].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[4].posterfid || 'res/img/more.png'}})">
                         <!-- 视频 -->
-                        <div ng-if="recmdList[3].type == 1 || recmdList[3].type==4 || recmdList[3].type > 5">
+                        <div ng-if="recmdList[4].type == 1 || recmdList[4].type==4 || recmdList[4].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[4].name }}</h3>
+                        <h3 style="padding-top: 25%">{{ recmdList[4].name }}</h3>
                         <p>{{ recmdList[4].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[4].type == 1 || recmdList[4].type==4 || recmdList[4].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[4].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="25%" ng-click="playvideo2(recmdList[4])">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[4].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="25%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[4].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -101,18 +156,30 @@
                 <div class="box-img search" ng-click="search()"></div>
                 <div class="place"></div>
                 <div class="li">
-                    <div class="f" style="background-image:url({{ recmdList[5].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[5].posterfid || 'res/img/more.png' }})">
                         <!-- 视频 -->
-                        <div ng-if="recmdList[3].type == 1 || recmdList[3].type==4 || recmdList[3].type > 5">
+                        <div ng-if="recmdList[5].type == 1 || recmdList[5].type==4 || recmdList[5].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[5].name }}</h3>
+                        <h3>{{ recmdList[5].name }}</h3>
                         <p>{{ recmdList[5].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[5].type == 1 || recmdList[5].type==4 || recmdList[5].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[5].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="play()">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[5].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[5].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="place"></div>
@@ -122,78 +189,138 @@
         <div class="part2">
             <ul>
                 <li class="li">
-                    <div class="f" style="background-image:url({{ recmdList[6].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[6].posterfid || 'res/img/more.png' }})">
                         <!-- 视频 -->
                         <div ng-if="recmdList[6].type == 1 || recmdList[6].type==4 || recmdList[6].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[6].name }}</h3>
+                        <h3>{{ recmdList[6].name }}</h3>
                         <p>{{ recmdList[6].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[6].type == 1 || recmdList[6].type==4 || recmdList[6].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[6].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="play()">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[6].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[6].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </li>
                 <li class="li">
-                    <div class="f" style="background-image:url({{ recmdList[7].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[7].posterfid || 'res/img/more.png' }})">
                         <!-- 视频 -->
-                        <div ng-if="recmdList[6].type == 1 || recmdList[6].type==4 || recmdList[6].type > 5">
+                        <div ng-if="recmdList[7].type == 1 || recmdList[7].type==4 || recmdList[7].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[7].name }}</h3>
+                        <h3>{{ recmdList[7].name }}</h3>
                         <p>{{ recmdList[7].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[7].type == 1 || recmdList[7].type==4 || recmdList[7].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[7].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="play()">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[7].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[7].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </li>
                 <li class="li">
-                    <div class="f" style="background-image:url({{ recmdList[8].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[8].posterfid || 'res/img/more.png' }})">
                         <!-- 视频 -->
-                        <div ng-if="recmdList[6].type == 1 || recmdList[6].type==4 || recmdList[6].type > 5">
+                        <div ng-if="recmdList[8].type == 1 || recmdList[8].type==4 || recmdList[8].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[8].name }}</h3>
+                        <h3>{{ recmdList[8].name }}</h3>
                         <p>{{ recmdList[8].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[8].type == 1 || recmdList[8].type==4 || recmdList[8].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[8].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="play()">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[8].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[8].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </li>
                 <li class="li">
-                    <div class="f" style="background-image:url({{ recmdList[9].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[9].posterfid || 'res/img/more.png' }})">
                         <!-- 视频 -->
-                        <div ng-if="recmdList[6].type == 1 || recmdList[6].type==4 || recmdList[6].type > 5">
+                        <div ng-if="recmdList[9].type == 1 || recmdList[9].type==4 || recmdList[9].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[0].name }}</h3>
-                        <p>{{ recmdList[0].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        <h3>{{ recmdList[9].name }}</h3>
+                        <p>{{ recmdList[9].description || '暂无' }} </p>
+
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[9].type == 1 || recmdList[9].type==4 || recmdList[9].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[9].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="play()">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[9].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[9].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </li>
                 <li class="li">
-                    <div class="f" style="background-image:url({{ recmdList[10].posterfid }})">
+                    <div class="f" style="background-image:url({{ recmdList[10].posterfid || 'res/img/more.png' }})">
                         <!-- 视频 -->
-                        <div ng-if="recmdList[6].type == 1 || recmdList[6].type==4 || recmdList[6].type > 5">
+                        <div ng-if="recmdList[10].type == 1 || recmdList[10].type==4 || recmdList[10].type > 5">
                             <img src="res/img/icon_play.png" class="icon-center-play">
                         </div>
                     </div>
                     <div class="b cont">
-                        <h3 ng-click="search()">{{ recmdList[0].name }}</h3>
-                        <p>{{ recmdList[0].description || '暂无' }} </p>
-                        <div class="goDetail" >查看详情</div>
-                        <img src="res/img/play_icon.png" class="play-icon" width="31%">
-                        <div class="offline"><img src="res/img/icon_download.png">离线缓存</div>
+                        <h3>{{ recmdList[10].name }}</h3>
+                        <p>{{ recmdList[10].description || '暂无' }} </p>
+
+
+                        <!--视频（有离线缓存按钮）-->
+                        <div ng-if="recmdList[10].type == 1 || recmdList[10].type==4 || recmdList[10].type > 5">
+                            <a href="video-detail.html?vid={{ recmdList[10].rid }}&source=home"><div class="goDetail" >查看详情</div></a>
+                            <img src="res/img/play_icon.png" class="play-icon" width="31%" ng-click="play()">
+                            <div class="offline"><img src="res/img/icon_download.png" ng-click="offline()">离线缓存</div>
+                        </div>
+
+                        <!--图片专题（查看详情在下面）-->
+                        <div ng-if="recmdList[10].type == 5">
+                            <img src="res/img/btn_see.png" class="play-icon" width="31%" ng-click="see()">
+                            <a href="video-detail.html?vid={{ recmdList[10].rid }}&source=home"><div class="specGoDetail">查看详情</div></a>
+                        </div>
+
                     </div>
                 </li>
             </ul>
@@ -201,27 +328,9 @@
     </div>
     <script type="text/javascript" src="res/js/cfg.js"></script>
     <script type="text/javascript" src="res/js/util.js"></script>
-    <script type="text/javascript" src="res/js/sHover.min.js"></script>
+    <script type="text/javascript" src="res/js/sHover.js"></script>
 	<script type="text/javascript" src="res/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="res/js/angular.min.js"></script>
     <script type="text/javascript" src="src/index.js"></script>
-    <script>
-        
-        window.onresize = function() {
-            $(".cont").css({
-                "width": "100%",
-                "height": "100%",
-                "top": 0,
-                "left": "-100%"
-            });
-        };
-        
-        var a=new sHover("li","b");
-        a.set({
-            slideSpeed:5,
-            opacityChange:true,
-            opacity:85
-        });
-    </script>
 </body>
 </html>

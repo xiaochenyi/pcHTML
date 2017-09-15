@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='apple-itunes-app' content='app-id=1156845145'>
+    <meta charset="utf-8">
+    <title>检查是否安装了app</title>
+    <script>
+//        //打开（下载）App
+//        function openApp(){
+//            var ua = window.navigator.userAgent.toLowerCase();
+//            //微信
+//            //if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+//            //    window.location.href='app://3dov';
+//            //}else{//非微信浏览器
+//                if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+//
+//                    window.location = "schema://cn.3dov.3DVideo";//ios下载地址
+//
+//                }else if (navigator.userAgent.match(/android/i)) {
+//                    var loadDateTime = new Date();
+//                    window.setTimeout(function() {
+//                        var timeOutDateTime = new Date();
+//                        if (timeOutDateTime - loadDateTime < 2000) {
+//                            window.location = "http://www.3dov.cn/h5/app/index.html";
+//                        } else {
+//                            window.close();
+//                        }
+//                    },1000);
+//                    window.location = 'app://3dov';
+//                }
+//            //}
+//        }
+//
+//
+//        function qq() {
+////            alert(navigator.userAgent);
+////            return;
+//            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+//                var loadDateTime = new Date();
+//                window.setTimeout(function() {
+//                    var timeOutDateTime = new Date();
+//                    if (timeOutDateTime - loadDateTime < 5000) {
+//                        window.location = "http://itunes.apple.com/app/id1156845145";
+//                    } else {
+//                        window.close();
+//                    }
+//                }, 25);
+//                window.location = "3DVideo://";
+//            } else if (navigator.userAgent.match(/android/i)) {
+//                var state = null;
+//                try {
+//                    state = window.open("app://3dov", '_blank');
+//                } catch(e) {}
+//                if (state) {
+//                    window.close();
+//                } else {
+//                    window.location = "http://www.3dov.cn/h5/app/index.html";
+//                }
+//            }
+//        }
+
+
+
+    if (navigator.userAgent.match(/android/i)) {
+        // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+        // 否则打开a标签的href链接
+        var isInstalled;
+        //下面是安卓端APP接口调用的地址，自己根据情况去修改
+        var ifrSrc = 'cartooncomicsshowtwo://platformapi/startApp? type=0&id=${com.id}&phone_num=${com.phone_num}';
+        var ifr = document.createElement('iframe');
+        ifr.src = ifrSrc;
+        ifr.style.display = 'none';
+        ifr.onload = function() {
+            // alert('Is installed.');
+            isInstalled = true;
+            alert(isInstalled);
+            document.getElementById('openApp0').click();};
+        ifr.onerror = function() {
+            // alert('May be not installed.');
+            isInstalled = false;
+            alert(isInstalled);
+        }
+        document.body.appendChild(ifr);
+        setTimeout(function() {
+            document.body.removeChild(ifr);
+        },1000);
+    }
+    //ios判断
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i))  {
+            //Animation://com.yz.animation
+            var isInstalled;
+            //var gz = '{"comName":"${com.short_name}","comID":"${com.id}","comPhoneNum":"${com.phone_num}","type":"0"}';
+            //var jsongz =JSON.parse(gz);
+
+            //下面是IOS调用的地址，自己根据情况去修改
+            var ifrSrc = 'Animation://?comName=${com.short_name}&comID=${com.id}&comPhoneNum=${com.phone_num}&type=0';
+            var ifr = document.createElement('iframe');
+            ifr.src = ifrSrc;
+            ifr.style.display = 'none';
+            ifr.onload = function() {
+                // alert('Is installed.');
+                isInstalled = true;
+                alert(isInstalled);
+                document.getElementById('openApp1').click();
+            };
+            ifr.onerror = function() {
+                // alert('May be not installed.');
+                isInstalled = false;
+                alert(isInstalled);
+            };
+            document.body.appendChild(ifr);
+            setTimeout(function() {
+                document.body.removeChild(ifr);
+            },1000);
+
+    }
+    </script>
+</head>
+<body>
+    <!--<div style="width: 200px;height: 200px;background: red" onclick="qq()">-->
+
+    <!--</div>-->
+
+
+
+    <a href="https://itunes.apple.com/cn/app/id477927812" id="openApp">贴吧客户端</a>
+</body>
+</html>

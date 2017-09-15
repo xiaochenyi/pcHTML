@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>确认订单</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .clear{clear: both;}.fl{float: left}.fr{float: right;}
+        ul,li{list-style: none}
+        ul.head{width: 100%;}
+        ul.head li{width: 20%;float: left}
+        ul.list li{width: 100%;border-bottom: 1px solid;}
+        .tab{width: 20%;float: left;}
+
+        .overlay{position: absolute;left:0;right:0;top:0;bottom:0;width: 100%;height: 100%;background: rgba(0,0,0,0.6);text-align:center;display: none}
+        .overlay .con{position: absolute;left: 50%;top:50%;width: 200px;height: 80px;margin:-40px -100px;background:#FFFFFF;}
+
+        .show{display: block;}.hidden{display: none}
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div>
+        <h2>订单名称</h2>
+        <p>已选：xxxxxx、xxxx</p>
+        <p></p>
+    </div>
+
+    <section>
+        <h2>选择打印数量</h2>
+
+        <ul class="head">
+            <li>商品信息</li>
+            <li>商品金额</li>
+            <li>商品数量</li>
+            <li>总金额</li>
+            <li>编辑</li>
+        </ul>
+
+        <ul class="list">
+            <li v-for="(item, i) in productList">
+                <div class="tab tab-1">
+                    <div class="check" v-bind:class="{'checked': item.checked}" @click="selectedProduct(item)">
+                        <img  v-bind:src="'images/btn-add-' + (item.checked? 'on' : 'off') +  '.png'" width="20%">
+                    </div>
+                    <div class="pic">
+                        <img v-bind:src="item.productImage" width="20%">
+                    </div>
+                    <div class="title">
+                        {{item.productName + "==" + i}}
+                    </div>
+                    <div class="include fr">
+                        <dl>
+                            <dt>赠送：</dt>
+                            <dd v-for="part in item.parts" v-text="part.partsName"></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="tab tab-2">
+                    <div class="price">{{item.productPrice | formatMoney}}</div>
+                </div>
+                <div class="tab tab-3">
+                    <div class="quantity">
+                        <a href="javascript:;" v-on:click="changeMoney(item, -1)">-</a>
+                        <input type="text" value="0" disabled style="width: 15px;" v-model="item.productQuantity">
+                        <a href="javascript:;" @click="changeMoney(item, 1)">+</a>
+                    </div>
+                </div>
+                <div class="tab tab-4">
+                    <div class="item-price-total">{{item.productPrice * item.productQuantity  | money("元")}}</div>
+                </div>
+                <div class="tab tab-5">
+                    <div class="opration" @click="delConfirm(item)">删除</div>
+                </div>
+                <div class="clear"></div>
+            </li>
+        </ul>
+
+
+        <div>
+            <img v-bind:src="'images/btn-add-' + (checkAllFlag? 'on' : 'off') +  '.png'" @click="checkAll(true)" width="50">
+            <span @click="checkAll(true)">全选</span>
+            <span  @click="checkAll(false)">取消全选</span>
+        </div>
+
+        <div style="text-align: right">
+            总计：{{totalMoney | money("元")}}
+        </div>
+    </section>
+
+
+    <div class="overlay"  v-bind:class="{'show': delFlag}">
+        <div class="con">
+            <h2>您确定要删除吗？</h2>
+            <button @click="del">yes</button>
+            <button @click="delFlag=false">no</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/vue-resource/1.3.4/vue-resource.min.js"></script>
+<script src="src/order.js"></script>
+</body>
+</html>

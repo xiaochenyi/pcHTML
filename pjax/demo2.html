@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>pjax</title>
+</head>
+<body id="container">
+
+
+</body>
+<script src="../res/js/jquery-2.1.1.min.js"></script>
+<script src="jquery.pjax.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $.pjax({
+//            selector: '#clickMe',
+            url: 'tpls/cont1.html',
+            container: '#container', //内容替换的容器
+            show: 'fade',  //展现的动画，支持默认和fade, 可以自定义动画方式，这里为自定义的function即可。
+            cache: true,  //是否使用缓存
+            storage: true,  //是否使用本地存储
+            titleSuffix: 'cont1标题', //标题后缀
+            filter: function(){},
+            callback: function(){
+
+            }
+        });
+
+        $("#title1").click(function() {
+            $.pjax({
+//            selector: '#clickMe',
+                url: 'tpls/cont2.html',
+                container: '#container', //内容替换的容器
+                show: 'fade',  //展现的动画，支持默认和fade, 可以自定义动画方式，这里为自定义的function即可。
+                cache: true,  //是否使用缓存
+                storage: true,  //是否使用本地存储
+                titleSuffix: 'cont2标题', //标题后缀
+                filter: function(){},
+                callback: function(){
+
+                }
+            })
+        })
+    });
+
+//    $(document).on('pjax:send', function() {
+//        console.log("send");
+//    });
+//    $(document).on('pjax:complete', function() {
+//        console.log("complete");
+//    });
+//    $(document).on('pjax:success', function(data, status, xhr, options) {
+//        console.log("success" + data + status);
+//    });
+
+
+</script>
+</html>

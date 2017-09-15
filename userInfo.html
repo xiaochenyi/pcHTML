@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+    <link type="text/css" rel="stylesheet" href="res/css/style.css">
+    <link type="text/css" rel="stylesheet" href="res/css/popup.css">
+</head>
+<body>
+
+<!--个人信息－－弹出框-->
+<div class="personal_box">
+    <div class="header">
+        <img src="res/img/icon_close.png" alt="" class="sure_box_close">
+    </div>
+    <div class="open_members_title clearfix">
+        <span></span>
+        <i>个人信息</i>
+        <span></span>
+    </div>
+    <br><br><br>
+    <div class="content">
+        <img id="headimage" src="res/img/more.png" alt="" class="avatar"/>
+        <p class="nickname">可爱萌娃</p>
+        <div class="free_member_confirm">
+            <span id="quitBut" style="cursor: pointer;margin: 0 auto" class="cancel">注销</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="logoutDiv" class="logout" style="display: block;">
+    <div class="header2" onclick="$('#logoutDiv').css('display','none')" style="cursor: pointer;">
+        <img src="res/img/icon_close.png" alt="" class="sure_box_close">
+    </div>
+    <div class="content">
+        <p class="text">是否注销</p>
+        <div class="free_member_confirm">
+            <span class="confirm" onclick="$('#logoutDiv').css('display','none');quitPost()">确认</span>
+            <span class="cancel" onclick="$('#logoutDiv').css('display','none')" style="cursor: pointer;">取消</span>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

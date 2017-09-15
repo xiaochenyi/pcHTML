@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>文网文首页</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body onkeydown="keydown();">
+<div class="head" style="display: none">
+    帝币余额：<span class="num">233</span>
+    <img class="icon" src="images/head.png">
+    <span class="name">天王盖地虎</span>
+    <a href="pay.html"><span class="pay">账号充值</span></a>
+    <span class="logout">退出</span>
+</div>
+
+<div class="bg-index">
+    <!--<img src="images/bg-index.png" width="100%">-->
+    <div class="bg"></div>
+    <div class="btn btn-download"><a href="http://app.download.3dov.cn/app/mhtj.apk">点击下载游戏</a></div>
+    <div class="btn btn-login-circle"></div>
+    <div class="btn btn-reg-circle"></div>
+    <div class="btn btn-pay-circle"></div>
+</div>
+<div class="footer">
+    <p>
+        婉拒18岁以下未成年用户进入游戏<br>
+        健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+    </p>
+    <a href="jzjh/index.html" target="_blank"><img src="images/btn-jzjh.png"></a>
+    <img src="images/btn-jfcl.png" class="btn-jfcl" style="cursor: pointer">
+    <img src="images/logo.png" class="logo">
+</div>
+
+<!--弹窗----登陆-->
+<div class="popup popup-login">
+    <div class="con">
+        <div class="top">
+            <div class="bg-line"></div>
+            <span>3D东东通行证</span>
+            <img src="images/icon-close.png" class="close" onclick="$('.popup-login').hide();">
+        </div>
+        <dl>
+            <dt><span class="tab-login on">登录</span><span class="tab-reg">注册</span></dt>
+            <dd><label><i>*</i>通行证账号：</label><input type="text" placeholder="请输入手机号" class="mobile"></dd>
+            <dd><label><i>*</i>密码：</label><input type="text" placeholder="6-16个字符，区分大小写" class="pwd"></dd>
+            <dd class="code"><label><i>*</i>验证码：</label><input type="text" placeholder="请输入短信验证码" class="cd"><span class="get1">获取验证码</span></dd>
+            <dd class="btn"><img class="btn-login" src="images/btn-login.png" width="100%"></dd>
+        </dl>
+    </div>
+</div>
+<!--弹窗----注册-->
+<div class="popup popup-reg">
+    <div class="con">
+        <div class="top">
+            <div class="bg-line"></div>
+            <span>3D东东通行证</span>
+            <img src="images/icon-close.png" class="close" onclick="$('.popup-reg').hide();">
+        </div>
+        <dl>
+            <dt><span class="tab-login">登录</span><span class="on tab-reg">注册</span></dt>
+            <dd><label><i>*</i>通行证账号：</label><input id="mobile" type="text" placeholder="请输入手机号"></dd>
+            <dd><label><i>*</i>密码：</label><input id="password" type="text" placeholder="6-16个字符，区分大小写"></dd>
+            <dd><label><i>*</i>确认密码：</label><input id="re_password" type="text" placeholder="请再次填写密码"></dd>
+            <dd><label><i>*</i>真实姓名：</label><input id="name" type="text" placeholder="请输入姓名"></dd>
+            <dd><label><i>*</i>身份证：</label><input id="numberID" type="text" placeholder="请输入身份证号"></dd>
+            <!--<dd><label><i>*</i>年龄：</label><input type="text" placeholder=""></dd>-->
+            <!--<dd><label><i>*</i>手机号：</label><input type="text" placeholder=""></dd>-->
+            <dd class="code"><label><i>*</i>验证码：</label><input id="reg-code" type="text" placeholder="请输入短信验证码"><span>获取验证码</span></dd>
+            <dd class="agreest"><img data-check="true" class="icon-select" src="images/icon-select-on.png">我已阅读并同意<span>3D东东用户服务协议</span></dd>
+            <dd class="btn-reg btn"><img class="btn-login" src="images/btn-reg.png" width="100%"></dd>
+            <dd class="btn-test btn">点击这个清除验证码次数</dd>
+        </dl>
+    </div>
+</div>
+<!--弹窗----服务协议-->
+<div class="popup popup-agreement popup-fuwu">
+    <div class="con">
+        <img src="images/icon-close.png" class="close" onclick="$('.popup-fuwu').hide();">
+        <div class="top">
+            <div class="bg-line"></div>
+            <span>东方视界网络服务使用协议</span>
+        </div>
+        <dl class="agree">
+            <dt>尊敬的CIBN高清影视用户：</dt>
+            <dd>欢迎您使用CIBN超级会员服务。CIBN高清影视提供的网络服务采用收费与免费相结合的方式，通过购买程序支付费用后，您就可以轻松享受CIBN超级会员服务。在开始购买程序之前，请您首先同意并接受以下服务条款。</dd>
+            <dd>【注意】CIBN超级会员（指国广东方网络（北京）有限公司，以下可简称“本平台”）有责任提醒您，请仔细阅读以下全部内容，如果您不同意本服务协议的任一或全部条款内容，请不要以确认的形式（包括但不限于：勾选、点击）选择“同意接受”或使用本协议项下服务。当您确认接受本服务协议或开始使用本协议项下CIBN超级会员服务时，即表示用户与CIBN超级会员已达成协议关系，并自愿接受并遵守CIBN超级会员服务的所有服务协议及相关之子协议、管理规范等。</dd>
+
+            <dt>一、协议条款的确认和接受</dt>
+            <dd>1.1、在您决定购买CIBN超级会员之前，请仔细阅读本收费协议条款。您必须在完全同意以下条款的前提下，才能进行购买程序。CIBN超级会员将根据以下协议条款为您提供收费服务。您在享受CIBN超级会员服务时必须完全、严格遵守本协议条款。</dd>
+            <dd>1.2、CIBN超级会员根据互联网的发展和中华人民共和国有关法律、法规的变化，不断地完善服务质量并依此修改服务条款。CIBN超级会员有权就本协议进行随时更新，且无需另行通知。您的权利以及义务的表述、购买程序及收费标准，均以最新的服务条款为准。您如果不同意该条款的修改并不影响已发生责任及义务的承担；如果您在条款变更后继续访问或使用CIBN高清影视，则视为您已经接受对本协议的修改。</dd>
+            <dd>1.3、您在进行注册程序及缴费程序过程中点击"我同意"按钮即表示您已仔细阅读并完全接受本收费协议下的全部条款。只有您根据提示确认愿意支付相关费用，并通过本协议约定方式中的一种方式支付费用后，您才能使用该收费视频。如您拒绝支付该等费用，则不能使用相关的视频服务。</dd>
+            <dd>1.4、对于未明确授权给您的收费视频及其他服务的权利、收益由CIBN超级会员或相关权利人所有。</dd>
+            <dd>1.5、您一旦购买CIBN超级会员服务，即视为您是符合中华人民共和国法律规定的具有完全民事权利能力和完全民事行为能力及能够独立承担民事责任的自然人，并了解及完全同意本网站的《使用协议》及本收费协议的各项内容，以及CIBN超级会员对《使用协议》及本协议随时所做的任何修改。</dd>
+            <dd>1.6、本CIBN超级会员服务协议中未约定事项以《使用协议》中的约定为准。</dd>
+
+            <dt>二、风险及责任</dt>
+            <dd>2.1、您须对自身在使用CIBN超级会员所提供的服务时的一切行为、行动（不论是否故意）负全部责任。</dd>
+            <dd>2.2、您应自行负责妥善且正确地保管、使用、维护您在CIBN超级会员申请取得的账户及账户密码。您应对该账户密码采取必要和有效的保密措施。非CIBN超级会员原因致使您账户密码泄漏以及因您保管、使用、维护不当造成损失的，CIBN超级会员无须承担与此有关的任何责任。</dd>
+            <dd>2.3、您明确了解并同意，本协议第5.2条款约定的付费方式为代收费运营商托收的付款方式，您通过此种付费方式付费可能存在一定的商业风险（包括但不限于不法分子利用您账户或银行卡等有价卡等进行违法活动），该等风险均会给您造成相应的经济损失。为此，您同意CIBN超级会员在充分履行其在本协议项下全部义务及勤勉谨慎义务的前提下不对您的前述风险和损失承担任何责任；并且，CIBN超级会员不承担向不法分子追究侵权责任或者代其向您承担损失的任何责任和义务。</dd>
+            <dd>2.4、您对本服务条款及修改有任何异议，可自动放弃其资格，但不退还任何已缴纳的收费视频费用。</dd>
+
+            <dt>三、收费标准</dt>
+            <dd>3.1、一旦您购买了CIBN超级会员的任何收费视频，即视为您认可该项服务标明之价格；您购买成功后，该项服务即时生效。</dd>
+            <dd>3.2、收费费用标准：具体每项服务的收费标准以视频旁边的具体标价为准。</dd>
+
+            <dt>四、购买步骤</dt>
+            <dd>4.1、对于具体购买操作步骤，CIBN超级会员会在相关页面上做每一步的明确提示。</dd>
+            <dd>4.2、费用支付：收费视频费用将在您点击购买之日按照收费视频上的标示价格通过支付宝或微信的方式支付。</dd>
+            <dd>4.3、一旦您在CIBN高清影视购买CIBN超级会员或其他收费视频成功后，则CIBN超级会员将即时收取该收费视频的费用，并不提供退费服务。</dd>
+
+            <dt>五、观看服务周期及观看权限</dt>
+            <dd>5.1、每一个收费视频都有自己单独的观看服务周期，您一旦购买CIBN超级会员中的这个收费视频即视为认可它的观看服务周期。</dd>
+            <dd>5.2、CIBN超级会员中的每一个收费视频的观看服务周期以视频旁边的标注期限为准。如您未在有效时间内观看已购买的CIBN超级会员服务中所含视频，视为您已全部观看，CIBN超级会员概不退款。</dd>
+            <dd>5.3、您在线观看权限：您的观看服务周期不会因您在观看期间对视频的中断、中止、终止、倒回等情况而延长。</dd>
+
+            <dt>六、消费明细查询</dt>
+            <dd>6.1、您可通过登录CIBN高清影视，进入"个人中心"项下，点击"我的订购"，免费查询消费的CIBN超级会员服务的详情。</dd>
+
+            <dt>七、用户权利限制</dt>
+            <dd>7.1、对于您购买的CIBN超级会员服务中所含的收费视频，您只可以私人观看，不得用于传播、商业、盈利等用途。</dd>
+            <dd>7.2、您同意不会采用收费或免费的方式，全部或部分地在任何公开场合展示您购买的收费视频，除非您的上述行为不会构成侵权。</dd>
+            <dd>7.3、当您购买、使用收费视频时，禁止有下列情况发生：</dd>
+            <dd>7.3.1、用非法的方式或为了非法的目的使用已购买的收费视频；</dd>
+            <dd>7.3.2、将您的CIBN超级会员账户有偿或无偿提供给任何第三人，并允许其通过您的账户观看非经其付费购买的收费视频。为尽量避免前述情形的发生，CIBN超级会员将对您的CIBN超级会员账户进行如下限制：若同一个账户在15分钟内有超过4个ip（含4个）访问，CIBN超级会员将关闭该CIBN超级会员账户服务30分钟。</dd>
+            <dd>7.3.3、将收费视频复制、销售、出租或授权给任何第三方。</dd>
+            <dd>7.3.4、主动对CIBN超级会员用于保护其收费视频的任何安全措施技术进行攻克、反向操作、更改、破坏或其他篡改，或协助他人进行上述行为。</dd>
+            <dd>7.3.5、通过非CIBN超级会员认可的方式获得收费许可视频，或者删除收费视频上的任何所有权声明或标签。</dd>
+            <dd>7.4、您不得通过CIBN超级会员的任何服务直接或间接地从事以下违反国家法律法规及社会公序良俗的行为：</dd>
+            <dd>7.4.1、违反宪法确定的基本原则的；</dd>
+            <dd>7.4.2、危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</dd>
+            <dd>7.4.3、损害国家荣誉和利益的；</dd>
+            <dd>7.4.4、煽动民族仇恨、民族歧视，破坏民族团结的；</dd>
+            <dd>7.4.5、破坏国家宗教政策，宣扬邪教和封建迷信的；</dd>
+            <dd>7.4.6、散布谣言，扰乱社会秩序，破坏社会稳定的；</dd>
+            <dd>7.4.7、散布淫秽、色情、赌博、暴力、恐怖或者教唆犯罪的；</dd>
+            <dd>7.4.8、侮辱或者诽谤他人，侵害他人合法权益的；</dd>
+            <dd>7.4.9、煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；</dd>
+            <dd>7.4.10、 以非法民间组织名义活动的；</dd>
+            <dd>7.4.11、含有法律、行政法规禁止的其他内容的。</dd>
+            <dd>7.4.12、 CIBN超级会员有权对您就使用服务之行为进行不定期监督，一旦发现涉及上述之行为，CIBN超级会员有权收回您对会员服务的使用权而不对您作出任何的赔偿。而且，CIBN超级会员将依法向国家机关就您的上述行为进行举报并保留进一步追究您的行为而导致CIBN超级会员损失之权利。</dd>
+            <dd>7.5、如您参加本平台买赠实物等商品活动，所赠商品将按照活动规定时间发放，如您在约定时间内未收到所赠商品时，您有权利向我方查询具体情况。但如果您未在活动赠品领取时间内在线上进行领取操作（填写并提交准确有效的联系信息，如联系电话、收件人、收件地址、其他领取信息等），视为您自动放弃此次活动赠品奖励，后续领取无效。</dd>
+
+            <dt>八、变更及免责条款</dt>
+            <dd>8.1、CIBN超级会员对所含视频的观看服务周期、购买价格保留随时变更的权利，而不需通知您。对于所有服务的中断或终止而造成的任何损失，CIBN超级会员无需对您或任何第三方承担任何责任。</dd>
+            <dd>8.2、鉴于网络服务的特殊性，您同意CIBN超级会员有权随时变更、中断或终止部分或全部的网络服务。CIBN超级会员保留随时修改、中断或终止服务而不需通知您的权利，对于所有服务的修改、中断或终止而造成的任何损失，CIBN超级会员无需对您或任何第三方承担任何责任。</dd>
+            <dd>8.3、对于因服务器的死机、网络的故障、数据库故障、软件升级、服务器维修、调整、升级等问题，或其他不可抗拒的事由，包括但不限于政府行为、自然灾害、黑客攻击等造成的服务中断和对您个人数据及资料造成的损失，CIBN超级会员不承担由此对您造成的任何损失或退还任何已缴纳的收费服务费用。但CIBN超级会员应尽可能事先进行通告。</dd>
+            <dd>8.4、您购买的CIBN超级会员服务使用期限中包含解决故障、服务器维修、调整、升级等所需用的合理时间，对上述情况所需的时间CIBN超级会员不予补偿。</dd>
+            <dd>8.5、CIBN超级会员对任何直接、间接、偶然、特殊及继起的损害不负责任，不予赔偿。</dd>
+            <dd>8.6、您在使用CIBN超级会员服务时，如遭受任何人身或财产的损失、损害或伤害，不论原因如何，CIBN超级会员均不负责任。由于您将个人密码告知他人或与他人共享注册帐户，由此导致的任何个人资料泄露，CIBN超级会员不负任何责任。</dd>
+            <dd>8.7、如您参加本平台买赠实物等商品活动，在收到所赠商品时请您务必仔细核验商品是否完好，如遇商品质量问题请联系商品的厂家客服解决。</dd>
+            <dd>8.8、如您参加本平台买赠实物等商品活动，实物以外的商品不接受退换货，部分实物商品不接受退换货，部分实物商品可接受在一定期限内退换货。如您需要退换商品时，请务必保证商品未开封，包装完好，不影响该商品的二次销售。详细规则以本平台发布的具体活动说明为准。</dd>
+
+            <dt>九、中断及终止服务</dt>
+            <dd>9.1、在某些罕见情况下，由于权利授权问题可能致使CIBN超级会员服务中某些视频无法观看。在这种情况下，CIBN超级会员不能给您退费，可以根据不同情况用其他视频进行替换的方式给您补偿。</dd>
+            <dd style="padding-bottom: 50px;">9.2、如您违反本协议条款中的内容，CIBN超级会员有权在不通知您的情况下立即终止您已购买的所有服务，以及取消您的CIBN超级会员账户和使用权限，且不退还任何已缴纳的收费服务费用。</dd>
+        </dl>
+        <div class="f-logo"><img src="images/logo.png" width="100"></div>
+    </div>
+</div>
+<!--弹窗----纠纷处理-->
+<div class="popup popup-agreement popup-jiufen">
+    <div class="con">
+        <img src="images/icon-close.png" class="close" onclick="$('.popup-jiufen').hide();">
+        <div class="top">
+            <div class="bg-line"></div>
+            <span>纠纷处理方式</span>
+        </div>
+        <dl class="agree">
+            <dt>1. 用户与用户之间的纠纷处理方式</dt>
+            <dd>1.1 我公司作为游戏发行，如若我公司运营游戏中的用户之间发生纠纷且无法协商一致的，可向国家相关行政机关或司法机关寻求解决包括但不限于向公安机关报案、申请仲裁或向人民法院提起诉讼等。我公司将会为实名注册用户提供必要的协助和支持，并根据有关行政机关和司法机关的要求承担一定的举证责任或采取必要措施。</dd>
+            <dd>1.2 我公司运营游戏的用户之间发生纠纷的，也可向我公司的客服人员投诉并举证。用户需提供与其账号注册信息一致的个人有效身份证件、必要的国家行政或司法机关文件和其他
+                我公司要求提供的相关证据。经我公司审核确认后，可以给予必要的协助和支持。</dd>
+            <dd>1.3 请您审阅并接受或不接受本协议，未成年人应在法定监护人陪同下审阅和履行，未成年人行使和履行本协议项下的权利和义务视为已获得了法定监护人的认可，您在享受东方视
+                界会员服务时必须完全、严格遵守本服务协议条款。</dd>
+
+            <dt>2. 用户与我公司之间的纠纷处理方式</dt>
+            <dd>2.1 如我公司运营游戏中的用户对我公司的服务有任何异议的，可以向我公司的客服人员投诉并举证。查证属实的，我公司将立即更正并按照现行法律规定给予用户必要的补偿。</dd>
+            <dd>2.2 如我公司运营游戏中的用户对我公司的服务有任何异议的，也可以向我公司所在地人民法院提起诉讼。</dd>
+            <dd>2.3 我公司用户纠纷解决客服电话010-62587688。</dd>
+        </dl>
+        <div class="f-logo"><img src="images/logo.png" width="100"></div>
+    </div>
+</div>
+
+
+
+<script src="js/localstorage.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/Network.js"></script>
+<script>
+var api = "http://172.16.121.27:8080/cms-web/app/www/";
+//var api = "http://172.16.100.24:8080/cms-web/app/www/";
+/**
+ * 临时清理redis的接口
+ */
+function clear1(tp) {
+    var url = api + "clear";
+    var success = function(res) {
+    };
+    var error = function(res) {
+    };
+    var d = {
+//        mobile: "18210453626",
+        mobile: $('#mobile').val(),
+        type: tp
+    };
+    var data = JSON.stringify(d);
+    PCNEW.Network.req(url, success, error, data);
+}
+
+    var toastTimeout = null;
+
+    /**
+     * toast
+     */
+    function toast(msg, duration) {
+        if($("#toast").length <= 0) {
+            var toastCon = '<div id="toast" class="toast"><span>' + msg + '</span></div>';
+            $("body").append(toastCon);
+        } else {
+            $("#toast span").html(msg);
+            $("#toast").show();
+        }
+
+        if(toastTimeout != null) {
+            clearTimeout(toastTimeout);
+            toastTimeout = null;
+            $("#toast span")[0].style.opacity = '1';
+        }
+
+        duration=isNaN(duration)?3000:duration;
+        setTimeout(function() {
+            var d = 0.5;
+            $("#toast span")[0].style.webkitTransition = '-webkit-transform ' + d + 's ease-in, opacity ' + d + 's ease-in';
+            $("#toast span")[0].style.opacity = '0';
+            toastTimeout = setTimeout(function() { $("#toast").hide() }, d * 1000);
+        }, duration);
+    }
+    /**
+     * 登录接口
+     */
+    function login(obj, cbk) {
+        var url = api + "login";
+        var success = function(res) {
+            if(res.success == 1) {
+                // res存入localstorage
+                DFSJ5.storage.setJSON("USER-INFO", res);
+                if(cbk) {
+                    cbk();
+                }
+            } else {
+                toast("登录失败！原因是：" + res.msg, 1000);
+            }
+        };
+        var error = function(res) {
+        };
+
+        var data = JSON.stringify(obj);
+        PCNEW.Network.req(url, success, error, data);
+    }
+    /**
+     * 注册接口
+     */
+    function register(obj, cbk) {
+        var url = api + "register";
+        var success = function(res) {
+            if(res.success == 1) {
+                // res存入localstorage
+                DFSJ5.storage.setJSON("USER-INFO", res);
+                if(cbk) {
+                    cbk();
+                }
+            } else {
+                toast("注册失败！原因是：" + res.msg, 1000);
+            }
+            _click = false;
+        };
+        var error = function(res) {
+            _click = false;
+        };
+        var data = JSON.stringify(obj);
+        PCNEW.Network.req(url, success, error, data);
+    }
+    /**
+     * 获取验证码
+     */
+    function getCode(phone, tp, ele) {
+//        var mobile = $('#mobile').val();
+        if(!validateMobile(phone)) {
+            toast("手机号填写有误！", 1000);
+            return;
+        }
+        var url = api + "getVerifyCode";
+        var success = function(res) {
+            if(res.success == 1) {
+                showTime(60, tp, ele);
+            } else {
+                toast("获取失败!原因是：" + res.msg, 1000);
+            }
+        };
+        var error = function(res) {
+        };
+        var d = {
+            mobile: phone,
+            type: tp
+        };
+        var data = JSON.stringify(d);
+        PCNEW.Network.req(url, success, error, data);
+    }
+    /**
+     * 计算倒计时
+     */
+    function showTime(time, tp, ele) {
+        if(!time) {
+            return;
+        }
+        var dTime = time - 1;
+        if(dTime > 0) {
+            ele.onclick = null;
+            $(ele).css('background','');
+            $(ele).html(dTime + "s后重新获取");
+            setTimeout(function() {
+                showTime(dTime, tp, ele);
+            }, 1000);
+        } else if(dTime == 0) {
+            // 重新获取
+            $(ele).css('background','');
+            $(ele).html("获取验证码");
+            ele.onclick = function() {
+                if(tp == 1) {
+                    var phone = $(".popup-login input.mobile").val();
+                } else if(tp == 2) {
+                    var phone = $("#mobile").val();
+                }
+                getCode(phone, tp, ele);
+            }
+        }
+    }
+    //验证手机号码是否合法
+    function validateMobile(mobile){
+        var pattern = /^0?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+        return pattern.test(mobile);
+    }
+
+    //验证两次密码是否相同
+    function checkPass(password, re_password){
+        if(password != re_password){
+            return false;
+        }
+        var pattern = /^\S{6,31}$/;
+        return pattern.test(password);
+    }
+    //检查中文输入
+    function cnNameCheck(str){
+        if (!str) {
+            return false;
+        }
+        if (str.length <2 || str.length >5) {
+            return false;
+        }
+        var reg=/^[\u4e00-\u9fa5](\s*[\u4e00-\u9fa5])*$/;
+        var flag = reg.test(str);
+        //alert(flag);
+        return flag;
+    }
+    //验证真实姓名
+    //    function checkName(name) {
+    //        var pattern = /^([\u4e00-\u9fa5]){2,5}$/;
+    //        return pattern.test(name);
+    //    }
+    function checkbjx(name) {
+        //js正则表达式  match
+        //为什么此时的match方法不对
+        if ("赵|钱|孙|李|周|吴|郑|王|冯|陈|楮|卫|蒋|沈|韩|杨|朱|秦|尤|许|何|吕|施|张|孔|曹|严|华|金|魏|陶|姜|戚|谢|邹|喻|柏|水|窦|章|云|苏|潘|葛|奚|范|彭|郎|鲁|韦|昌|马|苗|凤|花|方|俞|任|袁|柳|酆|鲍|史|唐|费|廉|岑|薛|雷|贺|倪|汤|滕|殷|罗|毕|郝|邬|安|常|乐|于|时|傅|皮|卞|齐|康|伍|余|元|卜|顾|孟|平|黄|和|穆|萧|尹|姚|邵|湛|汪|祁|毛|禹|狄|米|贝|明|臧|计|伏|成|戴|谈|宋|茅|庞|熊|纪|舒|屈|项|祝|董|梁|杜|阮|蓝|闽|席|季|麻|强|贾|路|娄|危|江|童|颜|郭|梅|盛|林|刁|锺|徐|丘|骆|高|夏|蔡|田|樊|胡|凌|霍|虞|万|支|柯|昝|管|卢|莫|经|房|裘|缪|干|解|应|宗|丁|宣|贲|邓|郁|单|杭|洪|包|诸|左|石|崔|吉|钮|龚|程|嵇|邢|滑|裴|陆|荣|翁|荀|羊|於|惠|甄|麹|家|封|芮|羿|储|靳|汲|邴|糜|松|井|段|富|巫|乌|焦|巴|弓|牧|隗|山|谷|车|侯|宓|蓬|全|郗|班|仰|秋|仲|伊|宫|宁|仇|栾|暴|甘|斜|厉|戎|祖|武|符|刘|景|詹|束|龙|叶|幸|司|韶|郜|黎|蓟|薄|印|宿|白|怀|蒲|邰|从|鄂|索|咸|籍|赖|卓|蔺|屠|蒙|池|乔|阴|郁|胥|能|苍|双|闻|莘|党|翟|谭|贡|劳|逄|姬|申|扶|堵|冉|宰|郦|雍|郤|璩|桑|桂|濮|牛|寿|通|边|扈|燕|冀|郏|浦|尚|农|温|别|庄|晏|柴|瞿|阎|充|慕|连|茹|习|宦|艾|鱼|容|向|古|易|慎|戈|廖|庾|终|暨|居|衡|步|都|耿|满|弘|匡|国|文|寇|广|禄|阙|东|欧|殳|沃|利|蔚|越|夔|隆|师|巩|厍|聂|晁|勾|敖|融|冷|訾|辛|阚|那|简|饶|空|曾|毋|沙|乜|养|鞠|须|丰|巢|关|蒯|相|查|后|荆|红|游|竺|权|逑|盖|益|桓|公|万俟|司马|上官|欧阳|夏侯|诸葛|闻人|东方|赫连|皇甫|尉迟|公羊|澹台|公冶|宗政|濮阳|淳于|单于|太叔|申屠|公孙|仲孙|轩辕|令狐|锺离|宇文|长孙|慕容|鲜于|闾丘|司徒|司空|丌官|司寇|仉|督|子车|颛孙|端木|巫马|公西|漆雕|乐正|壤驷|公良|拓拔|夹谷|宰父|谷梁|晋|楚|阎|法|汝|鄢|涂|钦|段干|百里|东郭|南门|呼延|归|海|羊舌|微生|岳|帅|缑|亢|况|后|有|琴|梁丘|左丘|东门|西门|商|牟|佘|佴|伯|赏|南宫|墨|哈|谯|笪|年|爱|阳|佟|第五|言|福".search(name) != -1
+                ) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    // 验证邮箱
+    function checkEmail(email){
+        var pattern = /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/ig;
+        return pattern.test(email);
+    }
+    // 身份证验证
+    function checkIdcard(idcard){
+        var Errors=[0, '身份证号码位数不对!', "身份证号码出生日期超出范围或含有非法字符!","身份证号码校验错误!","身份证地区非法!"];
+        var area={11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",21:"辽宁",22:"吉林",23:"黑龙江",31:"上海",32:"江苏",33:"浙江",34:"安徽",35:"福建",36:"江西",37:"山东",41:"河南",42:"湖北",43:"湖南",44:"广东",45:"广西",46:"海南",50:"重庆",51:"四川",52:"贵州",53:"云南",54:"西藏",61:"陕西",62:"甘肃",63:"青海",64:"宁夏",65:"新疆",71:"台湾",81:"香港",82:"澳门",91:"国外"}
+
+
+        var Y,JYM;
+        var S,M;
+//        var idcard_array = [];
+        var idcard_array = idcard.split("");
+        //地区检验
+        if(area[parseInt(idcard.substr(0,2))]==null) return Errors[4];
+        //身份号码位数及格式检验
+        switch(idcard.length){
+            case 15:
+                if ( (parseInt(idcard.substr(6,2))+1900) % 4 == 0 || ((parseInt(idcard.substr(6,2))+1900) % 100 == 0 && (parseInt(idcard.substr(6,2))+1900) % 4 == 0 )){
+                    ereg=/^[1-9][0-9]{5}[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|[1-2][0-9]))[0-9]{3}$/;//测试出生日期的合法性
+                } else {
+                    ereg=/^[1-9][0-9]{5}[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|1[0-9]|2[0-8]))[0-9]{3}$/;//测试出生日期的合法性
+                }
+                if(ereg.test(idcard)) return Errors[0];
+                else return Errors[2];
+                break;
+            case 18:
+                //18位身份号码检测
+                //出生日期的合法性检查
+                //闰年月日:((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|[1-2][0-9]))
+                //平年月日:((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|1[0-9]|2[0-8]))
+                if ( parseInt(idcard.substr(6,4)) % 4 == 0 || (parseInt(idcard.substr(6,4)) % 100 == 0 && parseInt(idcard.substr(6,4))%4 == 0 )){
+                    ereg=/^[1-9][0-9]{5}19[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|[1-2][0-9]))[0-9]{3}[0-9Xx]$/;//闰年出生日期的合法性正则表达式
+                } else {
+                    ereg=/^[1-9][0-9]{5}19[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|1[0-9]|2[0-8]))[0-9]{3}[0-9Xx]$/;//平年出生日期的合法性正则表达式
+                }
+                if(ereg.test(idcard)){//测试出生日期的合法性
+                    //计算校验位
+                    S = (parseInt(idcard_array[0]) + parseInt(idcard_array[10])) * 7
+                            + (parseInt(idcard_array[1]) + parseInt(idcard_array[11])) * 9
+                            + (parseInt(idcard_array[2]) + parseInt(idcard_array[12])) * 10
+                            + (parseInt(idcard_array[3]) + parseInt(idcard_array[13])) * 5
+                            + (parseInt(idcard_array[4]) + parseInt(idcard_array[14])) * 8
+                            + (parseInt(idcard_array[5]) + parseInt(idcard_array[15])) * 4
+                            + (parseInt(idcard_array[6]) + parseInt(idcard_array[16])) * 2
+                            + parseInt(idcard_array[7]) * 1
+                            + parseInt(idcard_array[8]) * 6
+                            + parseInt(idcard_array[9]) * 3 ;
+                    Y = S % 11;
+                    M = "F";
+                    JYM = "10X98765432";
+                    M = JYM.substr(Y,1);//判断校验位
+                    if(M == idcard_array[17]) return Errors[0]; //检测ID的校验位
+                    else return Errors[3];
+                }
+                else return Errors[2];
+                break;
+            default:
+                return Errors[1];
+                break;
+        }
+    }
+    // 注册逻辑
+    function regFun() {
+        var flag = true;
+
+        var mobile = $('#mobile').val();
+        var password = $('#password').val();
+        var re_password = $('#re_password').val();
+//            var email = $('#email').val();
+        var sh_realName = $('#name').val();
+        var id = $('#numberID').val();
+        var reg_code = $('#reg-code').val();
+
+
+        if(!validateMobile(mobile)){
+            toast('请填写正确的手机号码，以确保可以正常登本公司旗下各款游戏~', 1000);
+            flag = false;
+            return;
+        }
+        if(password.length < 6 || password.length > 16) {
+            toast('请填写格式正确的密码', 1000);
+            flag = false;
+            return;
+        }
+        if(! checkPass(password, re_password)){
+            toast('两次输入的密码不一致，请重新输入！', 1000);
+            flag = false;
+            return;
+        }
+
+        if (!sh_realName || !cnNameCheck(sh_realName)) {
+            toast('真实姓名输入有误,请重新输入', 1000);
+            flag = false;
+            return;
+        }
+        if (sh_realName.length <2 || sh_realName.length>5) {
+            toast('真实姓名输入长度有误,请重新输入', 1000);
+            flag = false;
+            return;
+        }
+        if (!checkbjx(sh_realName[0])) {
+            toast('姓名输入不正确,请输入真实的姓名.', 1000);
+            flag = false;
+            return;
+        }
+        if(!id) {
+            toast("请输入身份证号", 1000);
+            flag = false;
+            return;
+        } else if(checkIdcard(id) != 0){
+            toast(checkIdcard(id));
+            flag = false;
+            return;
+        }
+        if(!reg_code) {
+            toast("请输入手机验证码", 1000);
+            flag = false;
+            return;
+        }
+
+        var agree = $(".agreest .icon-select").data("check");
+        if(!agree){
+            toast('您必须先阅读《用户注册服务协议》并同意！', 1000);flag = false;return;
+        }
+
+        if(flag && !_click) {
+            _click = true;
+            //$("#form").submit();
+            console.log("确认提交注册");
+            var obj = {
+                username: mobile,
+                password: password,
+                realname: sh_realName,
+                identity: id,
+                verifyCode: reg_code
+            };
+            var cbk = function() {
+                // 注册成功后
+                $(".popup-reg").hide();
+                var user = DFSJ5.storage.getJSON("USER-INFO");
+                console.log(user);
+                if(user) {
+                    $(".bg-index .btn").not(".btn-download").hide();
+//            $(".bg-index").height("78%");
+                    var name = user.username;
+                    var coin = user.coin;
+                    $(".head .name").html(name);
+                    $(".head .num").html(coin);
+                    $(".head").show();
+                }
+            };
+            register(obj, cbk);
+        }
+    }
+    // 登陆逻辑
+    function loginFun() {
+        var mobile = $(".popup-login .mobile").val();
+        var password = $(".popup-login .pwd").val();
+        var reg_code = $(".popup-login .cd").val();
+        if(!validateMobile(mobile)){
+            toast('请填写正确的手机号码，以确保可以正常登本公司旗下各款游戏!', 1000);
+            return;
+        }
+        if(password.length < 6 || password.length > 16) {
+            toast('请填写格式正确的密码', 1000);
+            return;
+        }
+        if(!reg_code) {
+            toast("请输入手机验证码", 1000);
+            return;
+        }
+        var obj = {
+            username: mobile,
+            password: password,
+            verifyCode: reg_code
+        };
+        var cbk = function() {
+            // 登陆成功后
+            $(".popup-login").hide();
+            var user = DFSJ5.storage.getJSON("USER-INFO");
+            console.log(user);
+            if(user) {
+                $(".bg-index .btn").not(".btn-download").hide();
+//            $(".bg-index").height("78%");
+                var name = user.username;
+                var coin = user.coin;
+                $(".head .name").html(name);
+                $(".head .num").html(coin);
+                $(".head").show();
+            }
+        };
+        login(obj, cbk);
+    }
+
+    // 键盘按键
+    function keydown() {
+        if(window.event.keyCode == 13){ // enter
+//            console.log("enter按键");
+            if(!$(".popup-login").is(":hidden")) { // 登陆
+                loginFun();
+            } else if(!$(".popup-reg").is(":hidden")) { // 注册
+                regFun();
+            }
+        }
+    }
+
+    $(function() {
+        // 页面初始化数据
+        console.log("初始化数据");
+        var user = DFSJ5.storage.getJSON("USER-INFO");
+        console.log(user);
+        if(user) {
+            $(".bg-index .btn").not(".btn-download").hide();
+//            $(".bg-index").height("78%");
+            var name = user.username;
+            var coin = user.coin;
+            $(".head .name").html(name);
+            $(".head .num").html(coin);
+            $(".head").show();
+        }
+        // 退出
+        $(".logout").click(function() {
+            DFSJ5.storage.remove("USER-INFO");
+            location.reload();
+        });
+        // tab
+        $(".tab-login").click(function() {
+            $(".popup-reg").hide();
+            $(".popup-login").show();
+        });
+        $(".tab-reg").click(function() {
+            $(".popup-login").hide();
+            $(".popup-reg").show();
+        });
+        // 登陆
+        $(".btn-login-circle").click(function() {
+            $(".popup-login").show();
+        });
+        // 注册
+        $(".btn-reg-circle").click(function() {
+            $(".popup-reg").show();
+        });
+        // 3D东东用户服务协议
+        $(".agreest span").click(function() {
+            $(".popup-fuwu").show();
+        });
+        // 纠纷
+        $(".footer .btn-jfcl").click(function() {
+            $(".popup-jiufen").show();
+        });
+        // 是否同意3D东东用户服务协议
+        $(".agreest .icon-select").click(function() {
+            if($(this).data("check")) {
+                $(this).data("check", false).attr("src", "images/icon-select-off.png")
+            } else {
+                $(this).data("check", true).attr("src", "images/icon-select-on.png")
+            }
+        });
+
+        // 获取验证码（注册）
+        $(".popup-reg .code span")[0].onclick = function() {
+            var ele = this;
+            var phone = $('#mobile').val();
+            getCode(phone, "1", ele);
+        };
+
+        // 获取验证码（登陆）
+        $(".popup-login .code .get1")[0].onclick = function() {
+            var ele = this;
+            var phone = $(".popup-login input.mobile").val();
+            getCode(phone, "2", ele);
+        };
+        // 账号充值
+        $(".btn-pay-circle").click(function() {
+            var user = DFSJ5.storage.getJSON("USER-INFO");
+            if(user) {
+                window.location.href = "pay.html";
+            } else {
+                toast("请先登录！", 1000)
+            }
+        });
+
+        // 提交注册
+        _click = false;
+        $(".popup-reg .btn-reg").click(function() {
+            regFun();
+        });
+
+        $(".btn-test").click(function() {
+            console.log("clear");
+            clear1("1");
+            clear1("2");
+        });
+        // 确认登陆
+        $(".popup-login .btn-login").click(function() {
+            loginFun();
+        });
+    })
+</script>
+</body>
+</html>

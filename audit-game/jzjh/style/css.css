@@ -1,0 +1,322 @@
+* {
+    margin:0;
+    padding:0
+}
+body {
+    color:#555;
+    font:12px/1.5 tahoma, simsun, arial, sans-serif;
+}
+img {
+    border:0
+}
+li {
+    list-style:none
+}
+a:link, a:visited {
+    color:#6A747C;
+    text-decoration:none
+}
+a:hover {
+    color:#f50;
+    text-decoration:underline
+}
+a.green:link, a.green:visited {
+    color:#11670A;
+    text-decoration:none
+}
+a.green:hover {
+    color:#000;
+    text-decoration:underline
+}
+a.blue:link, a.blue:visited {
+    color:#1558F0;
+    text-decoration:underline
+}
+a.blue:hover {
+    color:#f50;
+    text-decoration:none
+}
+.mt1 {
+    margin-top:10px
+}
+.txtindent24 {
+    text-indent:24px
+}
+.txtindent12 {
+    text-indent:14px
+}
+.wrap {
+    margin:0 auto;
+    width:1002px
+}
+.header, .nav, .content, .footer, dl, dl dt, dl dd, .dlbottom,.dlbottomBig{
+    float:left;
+    display:inline;
+    overflow:hidden;
+    width:100%
+}
+.header {
+    background:url(../images/headerbg.jpg) no-repeat;
+    height:90px
+}
+.logo{ margin:21px 0 0 22px; float:left; *position:relative; *z-index:2; height:65px; overflow:hidden; cursor:pointer}
+.logo img{_display:none}
+.header ul {
+    float:right;
+    margin:26px 25px 0 0;
+    display:inline
+}
+.header ul li {
+    color:#11670A;
+    float:left;
+    margin:0 5px
+}
+.nav {
+    background:url(../images/common.png) 0 0 repeat-x;
+    height:40px;
+    overflow:hidden
+}
+.nav ul {
+    margin-left:60px
+}
+.nav ul li, .nav ul li a {
+    float:left;
+    height:40px;
+    width:120px
+}
+.nav ul li.line {
+    background:url(../images/common.png) -398px -40px no-repeat;
+    overflow:hidden;
+    width:2px
+}
+.nav ul li a {
+    display:block;
+    font:bold 14px/38px "瀹嬩綋";
+    text-align:center
+}
+.nav ul li a:link, .nav ul li a:visited {
+    color:#fff;
+    text-decoration:none
+}
+.nav ul li a:hover {
+    color:#F0FF00;
+    text-decoration:underline
+}
+.nav ul li a.active {
+    background:url(../images/common.png) 0 -40px no-repeat;
+    overflow:hidden
+}
+.nav ul li a.active:link, .nav ul li a.active:visited, .nav ul li a.active:hover {
+    color:#000;
+    text-decoration:none
+}
+.content {
+    margin-left:21px;
+    width:960px
+}
+.banner {
+    height:240px;
+    margin-top:10px;
+    width:100%
+}
+dl dt {
+    background:url(../images/common.png) 0 -80px repeat-x;
+    height:30px
+}
+dl dd {
+    border-left:1px #D8DCDB solid;
+    border-right:1px #D8DCDB solid
+}
+.dlbottom {
+    /*background:url(../images/dlbottom.jpg) 0 0 no-repeat;*/
+    height:3px
+}
+.dlbottomBig{
+    /*background:url(../images/dlbottom.jpg) 0 -6px no-repeat;*/
+    height:3px
+}
+em.leftT, em.rightT {
+    background:url(../images/common.png) -132px -40px no-repeat;
+    float:left;
+    height:30px;
+    width:3px
+}
+em.rightT {
+    background-position:-135px -40px;
+    float:right
+}
+.more,.more a{
+    width:36px;
+    height:6px;
+    display:inline;
+    overflow:hidden;
+}
+
+.more a{
+    display:block;
+    background:url(../images/common.png) -360px -65px no-repeat;
+    text-indent:-9999px;
+    margin-top:12px;
+}
+dl dt strong {
+    background:url(../images/common.png) -148px -40px no-repeat;
+    color:#59A712;
+    display:inline;
+    float:left;
+    font:bold 14px/30px "瀹嬩綋";
+    height:30px;
+    margin-left:12px;
+    text-indent:25px;
+    width:180px
+}
+.leftbar {
+    float:left;
+    width:700px
+}
+.leftbar dl dd {
+    line-height:26px;
+    padding:10px 15px;
+    width:668px
+}
+blockquote {
+    border:0px;
+    border-bottom:1px #D8DCDB solid;
+    margin-bottom:15px;
+    padding-bottom:20px
+}
+blockquote.otherrequest {
+    border:0px;
+    margin-bottom:0px
+}
+blockquote.faqbox{
+    border-bottom:1px #D8DCDB dashed;
+}
+.rightbar {
+    display:inline;
+    float:left;
+    margin-left:10px;
+    width:250px
+}
+.rightbar dl dd {
+    line-height:26px;
+    padding:10px 15px;
+    width:218px;
+}
+.notice{
+    font-size:14px;
+}
+.txttitle{
+    font:bold 18px/32px "瀹嬩綋";
+    text-align:center;
+}
+.firstP{
+    margin-top:40px;
+}
+.lastP{
+    margin-top:40px;
+    text-align:right;
+}
+
+.rightbar .dlbottom {
+    background-position:0 -3px
+}
+p.txtindentP {
+    text-indent:60px
+}
+.qBox {
+    border-bottom:1px #DEDEDE dashed;
+    line-height:20px;
+    padding:8px 0
+}
+.answer {
+    color:#aaa
+}
+dl.bigdl dd{
+    width:928px;
+    padding:10px 15px;
+}
+.step{
+    font-size:14px;
+    line-height:26px;
+}
+.stepimg{
+    width:100%;
+    text-align:center;
+}
+.btnsteptxt{
+    height:40px;
+}
+.btnsteptxt span{
+    color:#C5C5C5;
+}
+.steptxt p{
+    font-size:12px;
+}
+.steptxt p strong{
+    font:bold 14px/32px "瀹嬩綋";
+    color:#06d;
+}
+.steptxt p b{
+    color:#f50
+}
+.steptxt{
+    display:none;
+}
+.faqQ{
+    font:bold 14px/24px "瀹嬩綋";
+}
+.faqA{
+    font:12px/24px "瀹嬩綋";
+    color:#515151;
+    text-indent:24px;
+}
+.footer {
+    text-align:center;
+    padding:25px 0;
+    position:relative
+}
+.footer a.l, .footer a.r {
+    /*background:url(../images/police.png) no-repeat;*/
+    width:50px;
+    height:50px;
+    position:absolute;
+    left:90px;
+    top:35px
+}
+.footer a.r {
+    background-position:-50px 0;
+    left:860px
+}
+.footer p {
+    padding:3px 0
+}
+.footer p a {
+    margin:0 10px
+}
+.ico {
+    background:url(../images/common.png) no-repeat;
+    vertical-align:middle;
+    width:16px;
+    height:16px;
+    display:inline-block;
+    font-size:0
+}
+.footer .i28 {
+    position:absolute;
+    bottom:25px;
+    right:25px;
+    cursor:pointer;
+    background-position:-381px -40px
+}
+.tw {
+    position:relative;
+    padding:0;
+    width:248px;
+    height:174px;
+}
+.tw ul {
+    position:absolute;
+    top:0;
+    left:0;
+    padding:10px 15px
+}
